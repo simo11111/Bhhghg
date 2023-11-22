@@ -1422,7 +1422,7 @@ BY = @mx1mq '''
 					'''
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
-					#requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
 					cek_RMAD(kuki)
 					break
 
