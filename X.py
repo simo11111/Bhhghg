@@ -2,16 +2,26 @@ import webbrowser
 import webbrowser
 import requests,time,pyfiglet,datetime
 import os
-
-XXX='Mr-Besto-78jk-19kl'
-AS=input('\x1b[33m[∆]  Enter Your Password : ')
-if AS==XXX:
- 	print('\x1b[32mPassword Correct')
-     
- 	os.system('clear')
+import sys
+from colorama import *
+import colorama ,zlib
+from colorama import Fore
+from cfonts import render, say
+print(Fore.LIGHTGREEN_EX +Back.BLACK+ "الـمـرجـو إدخـال رمـز الـتـفـعـيـل الـخـاص بـك                                                          ")
+url = "https://pastebin.com/raw/HPuXrQ2M"
+response = requests.get(url)
+if response.status_code == 200:
+    password = response.text.strip()  
+    pss = input(Back.LIGHTMAGENTA_EX + Fore.LIGHTGREEN_EX + "𝙀𝙉𝙏𝙀𝙍 𝙆𝙀𝙔 -----> " +Back.BLACK+ Fore.LIGHTGREEN_EX)
+    if pss == password:
+        print(Back.LIGHTBLACK_EX +"تــم الـــتــفــعـــيــــل بــنــجــاح", Back.BLACK + "")
+        pass
+        print("𝙋𝘼𝙎𝙎𝙒𝙊𝙍𝘿 𝙎𝙐𝙎𝙁𝙐𝙇𝙇𝙔✔")
+        print(Fore.LIGHTGREEN_EX + "          WAIT......   ")
+        time.sleep(3)
+        os.system('clear')
 else:
- 	exit('\x1b[91mYour Passowrd Not Correct - كلمة سر خطأ')
- 
+	exit(Back.RED +'𝙒𝙊𝙍𝙉𝙂 𝙋𝘼𝙨𝙎𝙒𝙤𝙍𝘿 ✘')
 now = datetime.datetime.today()
 
 now = datetime.datetime.today()
