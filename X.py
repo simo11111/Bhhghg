@@ -6,7 +6,7 @@ import sys
 from colorama import *
 import colorama ,zlib
 from colorama import Fore
-from cfonts import render, say
+from cfonts
 print(Fore.LIGHTGREEN_EX +Back.BLACK+ "الـمـرجـو إدخـال رمـز الـتـفـعـيـل الـخـاص بـك                                                          ")
 url = "https://pastebin.com/raw/HPuXrQ2M"
 response = requests.get(url)
