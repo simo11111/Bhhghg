@@ -6,7 +6,7 @@ import sys
 from colorama import *
 import colorama ,zlib
 from colorama import Fore
-from cfonts
+from cfonts import render, say
 print(Fore.LIGHTGREEN_EX +Back.BLACK+ "الـمـرجـو إدخـال رمـز الـتـفـعـيـل الـخـاص بـك                                                          ")
 url = "https://pastebin.com/raw/HPuXrQ2M"
 response = requests.get(url)
@@ -105,7 +105,7 @@ na = webbrowser.open ('https://t.me/Vx_Besto_Officiel')
 # UA LIST
 #ugen2=open('frec.txt','r').read().splitlines()
 #ugen=open('m.txt','r').read().splitlines()
-from cfonts import render, say
+
 
  
 output = render('Abdeelkarim  Amiri', colors=['white', 'blue'], align='center')
