@@ -35,7 +35,7 @@ ss = str(now.second)
 t = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + mi + ':' + ss
 hours = now.hour
 x = datetime.datetime.now()
-g = datetime.datetime(2023, 12, 16, 2, 0, 0)
+g = datetime.datetime(2023, 12, 30, 2, 0, 0)
 if x.strftime("%x") > g.strftime("%x"):
     print('\n\n')
     print('\x1b[2;35m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  \x1b[38;5;210m╰─ \x1b[1;33m[⌯]  \x1b[2;32mYour Subscription Of the Tool Is Expired - إشتراكك في الأداة انتهى شكرا لإستخدامك اداتنا\n  \x1b[38;5;210m╰─ \x1b[1;33m[⌯]  \x1b[2;32mDevloper : Abdeelkarim Besto\n  \x1b[38;5;210m╰─ \x1b[1;33m[⌯]  \x1b[2;32mFacebook : Abdeelkarim - Amiri\n  \x1b[38;5;210m╰─ \x1b[1;33m[⌯]  \x1b[2;32mTelegram : @Vx_Besto_Officiel\n\x1b[2;35m\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
