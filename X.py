@@ -142,8 +142,7 @@ try:
 	prox = requests.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print(' ')
-prox=open('.prox.txt','r').read().splitlines()
+	print('')
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
 	b=random.randrange(1, 9)
