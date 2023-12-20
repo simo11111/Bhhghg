@@ -87,7 +87,7 @@ ss = str(now.second)
 t = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + mi + ':' + ss
 hours = now.hour
 x = datetime.datetime.now()
-g = datetime.datetime(2023, 12, 15, 0, 0, 0)
+g = datetime.datetime(2023, 12, 30, 0, 0, 0)
 if x.strftime('%x') > g.strftime('%x'):
      print('\n\n')
      print('     تم توقيف اداة راسل المطور لتفعيله المدفوع @mx1mq')
