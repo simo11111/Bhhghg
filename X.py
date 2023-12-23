@@ -1012,7 +1012,7 @@ def TakeFile():
 		exit()
 	try:
 		
-		jum = input('[?] INPUT FILE : ')
+		jum = input(f'''F {K}I {B}L {Z}E {kk}  N{hh} A{a26} M{a31} E {M}:{H}''')
 		for line in open(jum, 'r').readlines():
 			id.append(line.strip())
 		print('[•] Total Id : '+str(len(id)))
